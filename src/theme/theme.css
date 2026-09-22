@@ -1,0 +1,46 @@
+/*
+ * cogmodels palette + typography tokens.
+ *
+ * Inherited from bcogapp's dark, projector-friendly look so the two sites feel
+ * related. The unit colours at the bottom follow Hummel's own LISA display
+ * (P yellow, SP blue, predicate green, object red) so anyone who has seen his
+ * program recognises the network at once. Keep this file the single source of
+ * truth; src/theme/theme.ts mirrors the values for use in SVG and canvas code.
+ */
+:root {
+  /* Surfaces */
+  --bg: #0e1420;
+  --surface: #161d2b;
+  --surface-2: #1e2738;
+  --border: #2a3446;
+
+  /* Text */
+  --text: #e7ecf3;
+  --text-muted: #9aa6b8;
+
+  /* Brand / accents */
+  --accent: #4f9cff;
+  --accent-strong: #2f7de0;
+  --ok: #34d399;
+  --warn: #f0a94b;
+  --bad: #f87171;
+
+  /* LISA unit classes (Hummel's display convention) */
+  --unit-p: #f5d547;
+  --unit-sp: #5aa9ff;
+  --unit-pred: #4ade80;
+  --unit-obj: #f87171;
+  --unit-sem: #c4b5fd;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas,
+    monospace;
+
+  /* Rhythm */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --space: 16px;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
