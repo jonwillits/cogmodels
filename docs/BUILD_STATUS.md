@@ -2,7 +2,7 @@
 
 The build tracker for cogmodels. The spec is `lisa/LISA_SPEC.md` in the Box research folder (`research/projects/cogmodels/`); this file records what is done and what is next. One paragraph per line.
 
-> **Where we are (2026-09-22):** Phase 0 scaffolded locally: Vite + React + TypeScript + vitest + oxlint + vite-plugin-pwa, hash routing, the landing page with three topic cards, a topic page, the registry, the shared components copied from bcogapp, the seeded random stream with its `Math.random()` guard, and a placeholder LISA page at `#/models/lisa`. Not yet pushed to GitHub or deployed.
+> **Where we are (2026-09-22):** **Phase 0 is done.** The site is live at <https://jonwillits.github.io/cogmodels/> and auto-deploys on push to `main` (lint and tests gate the deploy). Verified live: the landing page with three topic cards, the `#/models/lisa` deep link with its topic tags, the PWA manifest and service worker served from the sub-path, no console errors. Next: phase 1, the engine core, starting with the configuration object and the five presets with provenance.
 
 ## Phase 0 — Site shell
 
@@ -17,7 +17,7 @@ The build tracker for cogmodels. The spec is `lisa/LISA_SPEC.md` in the Box rese
 - [x] `models/random.ts` (mulberry32 `Rng`) and the test that walks `src/models/` for `Math.random()`.
 - [x] Placeholder LISA demo page.
 - [x] `npm run lint`, `npm run test`, `npm run build` clean.
-- [ ] Create `github.com/jonwillits/cogmodels`, push, enable Pages, confirm the site loads at `https://jonwillits.github.io/cogmodels/` and that `#/models/lisa` deep-links.
+- [x] Created `github.com/jonwillits/cogmodels` (public), pushed, enabled Pages with the Actions source. First deploy succeeded in 38 s. Confirmed live: landing page, `#/models/lisa` deep link, manifest, service worker, icon.
 
 ## Phase 1 — Engine core (mapping)
 
