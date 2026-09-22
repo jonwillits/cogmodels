@@ -1,0 +1,39 @@
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.5000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 0.9000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Problem    Recip : Alternatives?    Fire control:random    Phase set: P1
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Problem to Alternatives?:
+  Preds:
+    From RIGHT1 to:    RIGHT1 = 0.871
+    From RIGHT2 to:    RIGHT2 = 0.871
+  Objs:
+    From C to:    Y = 0.871
+    From X to:    D = 0.871
+
+From Alternatives? to Problem:
+  Preds:
+    From RIGHT1 to:    RIGHT1 = 0.871
+    From RIGHT2 to:    RIGHT2 = 0.871
+  Objs:
+    From Y to:    C = 0.871
+    From D to:    X = 0.871
+

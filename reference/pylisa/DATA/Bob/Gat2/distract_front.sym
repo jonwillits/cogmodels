@@ -1,0 +1,58 @@
+Note: Gat 2: second, radically new approach to GAT task
+Note: A and B gone from driver; C in driver
+Note: GAT FTLD Task
+Note: Distractor Condition: Frontal subject: Attention  = 1
+Note: Assume that Semantic Distractors share some predicate semantic units with
+
+Parameters
+  Attention 0.1
+  HebbLearningRate 0.9
+  SaveGroupHebbs False
+  SavePropHebbs False
+  SaveSPHebbs False
+Done
+
+Analog Problem
+  DefPreds
+    Right 2 r1 r2 r3 r4 r5 r6 ; { the "right" relation: that between A and B
+    WrongS 2 r1 r2 r3 w1 w2 w3 ; { a "wrong" semantic relation (another 'tween C and y)
+    LookOf 1 l1 l2 l3 l4 l5 l6 ; { what C looks like
+  end { defpreds
+  DefObjs
+    C c1 c2 c3 c4 c5 c6 c7 ; { this is the critical object
+    X x ; { empty filler, x, of missing relational role in A:B::C:x
+  end { defobjs
+  DefProps
+    P1 Right ( C X ) 200 ; { the "right" relation: that between A and B
+    P2 WrongS ( C X ) 5 ;  { a "wrong" relation between C and some X
+    P3 LookOf ( C ) ;
+  end { defprops
+Done { analog 0
+
+Analog Alternatives?
+  DefPreds
+    Right 2 r1 r2 r3 r4 r5 r6 ; { shares 1 - 8
+    WrongS 2 r1 r2 r3 w1 w2 w3 ;
+    LookOf 1 l1 l2 l3 l4 l5 l6 ;
+    OtherWrong 2 r1 l1 w1 o1 o2 o3 ;
+  end { defpreds
+  DefObjs
+    Y y ; { call it Y rather than X to aviod semantic overlap
+    Z z ;
+    D d1 d2 d3 d4 d5 d6 d7 ; { right choice: for now no semantic overlap w/ C: all carried by preds
+    SemAssoc a1 a2 a3 a4 a5 a6 ; { other (wrong) semantic associate
+    SimShape ss1 ss2 ss3 ss4 ss5 ss6 ; { similar-looking obj
+  end { defobjs
+  DefProps
+    P1 Right ( Y D ) ; { the correct choice
+    P2 WrongS ( Y SemAssoc ) ; { the other semantic associate
+    P3 LookOf ( SimShape ) ;
+    P4 OtherWrong ( Y Z ) ;
+  end { defpreds
+Done { analog 1
+
+Sequence
+  Driver=[ 0 ] { set analog 0 to driver
+  Recip=[ 1 ]
+  Order=[ R ( 1 1 ) ]
+Done.

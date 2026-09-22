@@ -1,0 +1,234 @@
+st.john/3.sym  third attempt to do st john w/ pyLISA
+this file does ssl but no schema induction, however LISA
+figures out for itself whether to license SSL
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P1
+
+Similarities as of step 0:
+Similarity of Target-Joan to Source-Bill:
+MOP Sim   = 0.110 
+MIP Sim   = 0.297 
+Total Sim = 0.408 
+Similarity of Source-Bill to Target-Joan:
+MOP Sim   = 0.110 
+MIP Sim   = 0.182 
+Total Sim = 0.292 
+
+Seq. 1    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P2
+
+Similarities as of step 1:
+Similarity of Target-Joan to Source-Bill:
+MOP Sim   = 0.110 
+MIP Sim   = 0.572 
+Total Sim = 0.682 
+Similarity of Source-Bill to Target-Joan:
+MOP Sim   = 0.110 
+MIP Sim   = 0.350 
+Total Sim = 0.461 
+
+Seq. 2    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P3
+
+Similarities as of step 2:
+Similarity of Target-Joan to Source-Bill:
+MOP Sim   = 0.110 
+MIP Sim   = 0.830 
+Total Sim = 0.940 
+Similarity of Source-Bill to Target-Joan:
+MOP Sim   = 0.110 
+MIP Sim   = 0.509 
+Total Sim = 0.619 
+
+Seq. 3    Driver:Source-Bill    Recip : Target-Joan    Fire control:props    Phase set: P1
+
+Similarities as of step 3:
+Similarity of Target-Joan to Source-Bill:
+MOP Sim   = 0.110 
+MIP Sim   = 0.830 
+Total Sim = 0.940 
+Similarity of Source-Bill to Target-Joan:
+MOP Sim   = 0.110 
+MIP Sim   = 0.509 
+Total Sim = 0.619 
+
+Seq. 4    Driver:Source-Bill    Recip : Target-Joan    Fire control:props    Phase set: P2
+
+Similarities as of step 4:
+Similarity of Target-Joan to Source-Bill:
+MOP Sim   = 0.110 
+MIP Sim   = 0.830 
+Total Sim = 0.940 
+Similarity of Source-Bill to Target-Joan:
+MOP Sim   = 0.110 
+MIP Sim   = 0.509 
+Total Sim = 0.619 
+
+Seq. 5    Driver:Source-Bill    Recip : Target-Joan    Fire control:props    Phase set: P3
+
+Similarities as of step 5:
+Similarity of Target-Joan to Source-Bill:
+MOP Sim   = 0.110 
+MIP Sim   = 0.830 
+Total Sim = 0.940 
+Similarity of Source-Bill to Target-Joan:
+MOP Sim   = 0.110 
+MIP Sim   = 0.509 
+Total Sim = 0.619 
+
+Seq. 6    Driver:Source-Bill    Recip : Target-Joan    Fire control:props    Phase set: P4
+
+Similarities as of step 6:
+Similarity of Target-Joan to Source-Bill:
+MOP Sim   = 0.380 
+MIP Sim   = 0.871 
+Total Sim = 1.250 
+Similarity of Source-Bill to Target-Joan:
+MOP Sim   = 0.380 
+MIP Sim   = 0.730 
+Total Sim = 1.110 
+
+Seq. 7    Driver:Source-Bill    Recip : Target-Joan    Fire control:props    Phase set: P5
+
+Similarities as of step 7:
+Similarity of Target-Joan to Source-Bill:
+MOP Sim   = 0.484 
+MIP Sim   = 0.888 
+Total Sim = 1.372 
+Similarity of Source-Bill to Target-Joan:
+MOP Sim   = 0.484 
+MIP Sim   = 0.888 
+Total Sim = 1.372 
+
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Target-Joan to Source-Bill:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+    From P2 to:    P2 = 0.982
+    From P3 to:    P3 = 0.982
+    From "P4" to:    P4 = 0.982
+    From "P5" to:    P5 = 0.990
+  Preds:
+    From HAS1 to:    HAS1 = 0.968
+    From HAS2 to:    HAS2 = 0.968
+    From GOTO1 to:    GOTO1 = 0.968
+    From GOTO2 to:    GOTO2 = 0.968
+    From WANT1 to:    WANT1 = 0.968
+    From WANT2 to:    WANT2 = 0.968
+    From "DRIVETO2" to:    DRIVETO2 = 0.968
+    From "DRIVETO3" to:    DRIVETO3 = 0.968
+    From "DRIVETO1" to:    DRIVETO1 = 0.968
+    From "CAUSE1" to:    CAUSE1 = 0.969
+    From "CAUSE2" to:    CAUSE2 = 0.969
+  Objs:
+    From JOAN to:    BILL = 0.970
+    From CIVIC to:    JEEP = 0.968
+    From LAX to:    BEACH = 0.968
+
+From Source-Bill to Target-Joan:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+    From P2 to:    P2 = 0.982
+    From P3 to:    P3 = 0.982
+    From P4 to:    "P4" = 0.982
+    From P5 to:    "P5" = 0.990
+  Preds:
+    From HAS1 to:    HAS1 = 0.968
+    From HAS2 to:    HAS2 = 0.968
+    From GOTO1 to:    GOTO1 = 0.968
+    From GOTO2 to:    GOTO2 = 0.968
+    From WANT1 to:    WANT1 = 0.968
+    From WANT2 to:    WANT2 = 0.968
+    From DRIVETO1 to:    "DRIVETO1" = 0.968
+    From DRIVETO2 to:    "DRIVETO2" = 0.968
+    From DRIVETO3 to:    "DRIVETO3" = 0.968
+    From CAUSE1 to:    "CAUSE1" = 0.969
+    From CAUSE2 to:    "CAUSE2" = 0.969
+  Objs:
+    From BILL to:    JOAN = 0.970
+    From JEEP to:    CIVIC = 0.968
+    From BEACH to:    LAX = 0.968
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+Analog Target-Joan:
+
+Props:
+
+Props:
+"P4":  [ "DRIVETO2" + CIVIC ] [ "DRIVETO3" + LAX ] [ "DRIVETO1" + JOAN ] 
+"P5":  [ "CAUSE1" + P3 ] [ "CAUSE2" + "P4" ] 
+
+Preds:
+"DRIVETO2":
+   PTRANS2(1.000)
+   GOTO2(1.000)
+   DRIVE2(1.000)
+   VEHICLE2(1.000)
+   DRIVE22(1.000)
+   DRIVE32(1.000)
+
+"DRIVETO3":
+   PTRANS3(1.000)
+   GOTO3(1.000)
+   DRIVE3(1.000)
+   VEHICLE3(1.000)
+   DRIVE23(1.000)
+   DRIVE33(1.000)
+
+"DRIVETO1":
+   PTRANS1(1.000)
+   GOTO1(1.000)
+   DRIVE1(1.000)
+   VEHICLE1(1.000)
+   DRIVE21(1.000)
+   DRIVE31(1.000)
+
+"CAUSE1":
+   CAUSE1(1.000)
+   CAUSE21(1.000)
+   CAUSE31(1.000)
+   CAUSE41(1.000)
+
+"CAUSE2":
+   CAUSE2(1.000)
+   CAUSE22(1.000)
+   CAUSE32(1.000)
+   CAUSE42(1.000)
+
+
+Objs:
+
+Analog Source-Bill:
+
+Props:
+
+Props:
+
+Preds:
+
+Objs:

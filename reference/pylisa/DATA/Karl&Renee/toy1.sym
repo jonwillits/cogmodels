@@ -1,0 +1,76 @@
+Note: First attempt to illustrate how (child) LISA can run mental models
+
+Analog NaivePhysics
+  DefPreds
+    support 2 support hold -fall ;
+    fall 1 fall descend gravity break ;
+    unsupported 1 -support -hold fall ;
+    not 1 negate not false ;
+    cause 2 cause relation ;
+  end
+  DefObjs
+    supporter solid strong horizontal supporter ;
+    supported light supported ;
+  end
+  DefProps
+    P1 support ( supporter supported ) ;
+    P2 fall ( supported ) ;
+    P3 not ( P2 ) ;
+    P4 cause ( P1 P3 ) ;
+    P5 unsupported ( supported ) ;
+    P6 cause ( P5 P2 ) ;
+  end
+  DefGroups
+    G1
+      Props: P1 %
+      Semantics: cause %
+      %%
+    G2
+      Props: P2 P3 %
+      Semantics: effect %
+      %%
+    G3 { support prevents fallling
+      Groups: G1 G2 %
+      Props: P4 %
+      Semantics: causeEffect
+      %%
+    G4
+      Props: P5 %
+      Semantics: cause %
+      %%
+    G5
+      Props: P2 %
+      Semantics: effect %
+      %%
+    G6
+      Groups: G4 G5 %
+      Props: P6 %
+      Semantics: causeEffect %
+      %%
+  end
+done { naiive physics analog
+
+Analog SupportedGlass
+  DefPreds
+    support 2 support hold -fall ;
+  end
+  DefObjs
+    glass glass container drink fragile ;
+    table large horizontal flat furniture table ;
+  end
+  DefProps
+    P1 support ( Table Glass ) ;
+  end
+done { glass example
+
+Sequence
+  Driver=[ 1 ]
+  Recip=[ 0 ]
+  Order=[ P1 h ]
+  { turn control over to the schema
+  SSL_OK
+  Driver=[ 0 ]
+  Recip=[ 1 ]
+  Order=[ G1 ( 1 1 ) G2 ( 2 1 ) ]
+done.
+    

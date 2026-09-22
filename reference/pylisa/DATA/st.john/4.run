@@ -1,0 +1,285 @@
+Run of LISA Version 1.00; last modified 10/18/11
+
+Note: st.john/4.sym  The whole kit & kaboodle
+Note: this file does ssl and schema induction and LISA
+Note: figures out for itself whether to license SSL
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 0.1000
+    Recip Inhibition = 0.1000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P1
+Seq. 1    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P2
+Seq. 2    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P3
+Seq. 3    Driver:Source-Bill    Recip : Target-Joan Schema    Fire control:props    Phase set: P1
+Seq. 4    Driver:Source-Bill    Recip : Target-Joan Schema    Fire control:props    Phase set: P2
+Seq. 5    Driver:Source-Bill    Recip : Target-Joan Schema    Fire control:props    Phase set: P3
+Seq. 6    Driver:Source-Bill    Recip : Target-Joan Schema    Fire control:props    Phase set: P4
+Seq. 7    Driver:Source-Bill    Recip : Target-Joan Schema    Fire control:props    Phase set: P5
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Target-Joan to Source-Bill:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.968    P3 = 0.040    P4 = 0.040
+    From P2 to:    P2 = 0.982    P5 = 0.962
+    From P3 to:    P4 = 0.017    P3 = 0.017
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.245    SP1.2 = 0.245    SP4.1 = 0.281    SP4.2 = 0.281    SP4.3 = 0.281
+    From SP1.2 to:    SP4.1 = 0.102    SP4.2 = 0.102    SP4.3 = 0.102
+    From SP2.1 to:    SP2.1 = 0.245    SP2.2 = 0.245    SP5.1 = 0.217    SP5.2 = 0.217
+    From SP2.2 to:
+    From SP3.1 to:    SP3.1 = 0.993
+    From SP3.2 to:    SP3.2 = 0.992
+  Preds:
+    From HAS1 to:    HAS1 = 0.086    HAS2 = 0.086    DRIVETO1 = 0.092    DRIVETO2 = 0.092    DRIVETO3 = 0.092
+    From HAS2 to:
+    From GOTO1 to:    GOTO1 = 0.086    GOTO2 = 0.086    CAUSE1 = 0.082    CAUSE2 = 0.082
+    From GOTO2 to:
+    From WANT1 to:    WANT1 = 0.970
+    From WANT2 to:    WANT2 = 0.970
+  Objs:
+    From JOAN to:    BILL = 0.092    JEEP = 0.092    BEACH = 0.092
+    From CIVIC to:
+    From LAX to:
+
+From Source-Bill to Target-Joan:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.968
+    From P2 to:    P2 = 0.982
+    From P3 to:    P1 = 0.040    P3 = 0.017
+    From P4 to:    P1 = 0.040    P3 = 0.017
+    From P5 to:    P2 = 0.962
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.245
+    From SP1.2 to:    SP1.1 = 0.245
+    From SP2.1 to:    SP2.1 = 0.245
+    From SP2.2 to:    SP2.1 = 0.245
+    From SP3.1 to:    SP3.1 = 0.993
+    From SP3.2 to:    SP3.2 = 0.992
+    From SP4.1 to:    SP1.1 = 0.281    SP1.2 = 0.102
+    From SP4.2 to:    SP1.1 = 0.281    SP1.2 = 0.102
+    From SP4.3 to:    SP1.1 = 0.281    SP1.2 = 0.102
+    From SP5.1 to:    SP2.1 = 0.217
+    From SP5.2 to:    SP2.1 = 0.217
+  Preds:
+    From HAS1 to:    HAS1 = 0.086
+    From HAS2 to:    HAS1 = 0.086
+    From GOTO1 to:    GOTO1 = 0.086
+    From GOTO2 to:    GOTO1 = 0.086
+    From WANT1 to:    WANT1 = 0.970
+    From WANT2 to:    WANT2 = 0.970
+    From DRIVETO1 to:    HAS1 = 0.092
+    From DRIVETO2 to:    HAS1 = 0.092
+    From DRIVETO3 to:    HAS1 = 0.092
+    From CAUSE1 to:    GOTO1 = 0.082
+    From CAUSE2 to:    GOTO1 = 0.082
+  Objs:
+    From BILL to:    JOAN = 0.092
+    From JEEP to:    JOAN = 0.092
+    From BEACH to:    JOAN = 0.092
+
+From Source-Bill to Schema:
+  Groups:
+  Props:
+    From P1 to:    "P1" = 0.982
+    From P2 to:    "P2" = 0.854
+    From P3 to:    "P3" = 0.982
+    From P4 to:    "P4" = 0.854
+    From P5 to:    "P5" = 0.982
+  SPs:
+    From SP1.1 to:    "SP1.1" = 0.992
+    From SP2.1 to:    "SP2.1" = 0.987
+    From SP3.1 to:    "SP3.1" = 0.987
+    From SP4.1 to:    "SP4.1" = 0.987
+    From SP5.1 to:    "SP5.1" = 0.990
+  Preds:
+    From HAS1 to:    "HAS1" = 0.970
+    From GOTO1 to:    "GOTO1" = 0.969
+    From WANT1 to:    "WANT1" = 0.969
+    From DRIVETO1 to:    "DRIVETO1" = 0.969
+    From CAUSE1 to:    "CAUSE1" = 0.969
+  Objs:
+    From BILL to:    "BILL" = 0.970
+
+From Schema to Source-Bill:
+  Groups:
+  Props:
+    From "P1" to:    P1 = 0.982
+    From "P2" to:    P2 = 0.854
+    From "P3" to:    P3 = 0.982
+    From "P4" to:    P4 = 0.854
+    From "P5" to:    P5 = 0.982
+  SPs:
+    From "SP1.1" to:    SP1.1 = 0.992
+    From "SP2.1" to:    SP2.1 = 0.987
+    From "SP3.1" to:    SP3.1 = 0.987
+    From "SP4.1" to:    SP4.1 = 0.987
+    From "SP5.1" to:    SP5.1 = 0.990
+  Preds:
+    From "HAS1" to:    HAS1 = 0.970
+    From "GOTO1" to:    GOTO1 = 0.969
+    From "WANT1" to:    WANT1 = 0.969
+    From "DRIVETO1" to:    DRIVETO1 = 0.969
+    From "CAUSE1" to:    CAUSE1 = 0.969
+  Objs:
+    From "BILL" to:    BILL = 0.970
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+* * * * * Analog Schema * * * * *
+
+Groups:
+
+Props:
+"P1":  [ "HAS1" + "BILL" ] 
+"P2":  [ "GOTO1" + "BILL" ] 
+"P3":  [ "WANT1" + "BILL" ] 
+"P4":  [ "DRIVETO1" + "BILL" ] 
+"P5":  [ "CAUSE1" + "P3" ] 
+
+Preds:
+"HAS1":
+   STATE1(1.000)
+   STATE2(0.968)
+   HAS11(1.000)
+   HAS12(0.968)
+   HAS21(1.000)
+   HAS22(0.968)
+   HAS31(1.000)
+   HAS32(0.968)
+
+"GOTO1":
+   PTRANS1(1.000)
+   PTRANS2(0.989)
+   GOTO11(1.000)
+   GOTO12(0.989)
+   GOTO21(1.000)
+   GOTO22(0.989)
+   GOTO31(1.000)
+   GOTO32(0.989)
+
+"WANT1":
+   STATE1(1.000)
+   STATE2(1.000)
+   WANT1(1.000)
+   WANT2(1.000)
+   11(1.000)
+   12(1.000)
+   WANT21(1.000)
+   WANT22(1.000)
+   WANT31(1.000)
+   WANT32(1.000)
+
+"DRIVETO1":
+       STATE1(0.579)
+       STATE2(0.562)
+       HAS11(0.579)
+       HAS12(0.562)
+       HAS21(0.579)
+       HAS22(0.562)
+       HAS31(0.579)
+       HAS32(0.562)
+   PTRANS1(1.000)
+   PTRANS2(0.997)
+       GOTO11(0.568)
+       GOTO12(0.564)
+       GOTO21(0.568)
+       GOTO22(0.564)
+       GOTO31(0.568)
+       GOTO32(0.564)
+         PTRANS3(0.446)
+         GOTO1(0.446)
+         GOTO2(0.446)
+         GOTO3(0.446)
+         DRIVE1(0.446)
+         DRIVE2(0.446)
+         DRIVE3(0.446)
+         VEHICLE1(0.446)
+         VEHICLE2(0.446)
+         VEHICLE3(0.446)
+         DRIVE21(0.446)
+         DRIVE22(0.446)
+         DRIVE23(0.446)
+         DRIVE31(0.446)
+         DRIVE32(0.446)
+         DRIVE33(0.446)
+
+"CAUSE1":
+   STATE1(1.000)
+     STATE2(0.800)
+     HAS11(0.785)
+     HAS12(0.800)
+     HAS21(0.785)
+     HAS22(0.800)
+     HAS31(0.785)
+     HAS32(0.800)
+       PTRANS1(0.597)
+         PTRANS2(0.419)
+       GOTO11(0.597)
+         GOTO12(0.419)
+       GOTO21(0.597)
+         GOTO22(0.419)
+       GOTO31(0.597)
+         GOTO32(0.419)
+         WANT1(0.378)
+         11(0.378)
+         WANT21(0.378)
+         WANT31(0.378)
+      CAUSE1(0.721)
+      CAUSE2(0.721)
+      CAUSE21(0.721)
+      CAUSE22(0.721)
+      CAUSE31(0.721)
+      CAUSE32(0.721)
+      CAUSE41(0.721)
+      CAUSE42(0.721)
+
+
+Objs:
+"BILL":
+   HUMAN(1.000)
+   ADULT(1.000)
+       FEMALE(0.589)
+       JOAN1(0.589)
+       JOAN2(0.589)
+       JOAN3(0.589)
+    ARTIFACT(0.924)
+    VEHICLE(0.924)
+    CAR(0.924)
+   CIVIC(0.995)
+        JAPANESE(0.497)
+        GOOD(0.497)
+        LOCATION(0.483)
+   AIRPORT(0.966)
+        COMMERCE(0.483)
+        TRANSPORT(0.483)
+        FLIGHT(0.483)
+         MALE(0.426)
+         BILL1(0.426)
+         BILL2(0.426)
+         BILL3(0.426)
+    JEEP(0.852)
+         AMERICAN(0.426)
+         SHIT(0.426)
+

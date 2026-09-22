@@ -1,0 +1,150 @@
+{ Exemplars.sym
+{
+{ 10/27/10
+{
+{ This file contains the LISA reps of all eight distinct exemplars from Wookyoung's experment, probabilistic condition
+{
+{ simulations will be constructed by placing various of these exemplars, along with schemas LISA has learned by comparing them,
+{  into LTM and letting LISA retrieve, map, infer and schema-induce.
+{
+{ Categorization will be inference: Category label from retrieved exemplar or schema will be inferred into rep'n of
+{  to-be-categorized item
+
+{ Make one analog for all exemplars and use groups to represent individual exemplars (?)
+
+{ Category A exemplars: prototype is [1, 1, 1, 1]: Circle is larger, darker, above and in front
+
+Analog AllExemplars
+    DefPreds
+        Larger [ rel_size larger ] [ rel_size smaller ] ;
+        Darker [ rel_shade darker ] [ rel_shade lighter ] ;
+        Above [ rel_loc above ] [ rel_loc below ] ;
+        InFront [ rel_depth in_front ] [ rel_depth behind ] ;
+        Category [ cat label ] ;
+    end
+    DefObjs
+        Circle part circle ;
+        Square part square ;
+        A label A ;
+        B label B ;
+    end
+    DefProps
+        { Category A
+        { exemplar A1: 0111
+        P1 Larger ( Square Circle ) ;
+        P2 Darker ( Circle Square ) ;
+        P3 Above ( Circle Square ) ;
+        P4 InFront ( Circle Square ) ;
+        P5 Category ( A ) ;        
+        { exemplar A2: 1011
+        P6 Larger ( Circle Square ) ;
+        P7 Darker ( Square Circle ) ;
+        P8 Above ( Circle Square ) ;
+        P9 InFront ( Circle Square ) ;
+        P10 Category ( A ) ;
+        { exemplar A3: 1101
+        P11 Larger ( Circle Square ) ;
+        P12 Darker ( Circle Square ) ;
+        P13 Above ( Square Circle ) ;
+        P14 InFront ( Circle Square ) ;
+        P15 Category ( A ) ;
+        { exemplar A4: 1110
+        P16 Larger ( Circle Square ) ;
+        P17 Darker ( Circle Square ) ;
+        P18 Above ( Circle Square ) ;
+        P19 InFront ( Square Circle ) ;
+        P20 Category ( A ) ;
+        
+        { Category B
+        { exemplar B1: 1000
+        P21 Larger ( Circle Square ) ;
+        P22 Darker ( Square Circle ) ;
+        P23 Above ( Square Circle ) ;
+        P24 InFront ( Square Circle ) ;
+        P25 Category ( B ) ;
+        { exemplar B2: 0100
+        P26 Larger ( Square Circle ) ;
+        P27 Darker ( Circle Square ) ;
+        P28 Above ( Square Circle ) ;
+        P29 InFront ( Square Circle ) ;
+        P30 Category ( B ) ;
+        { exemplar B3: 0010
+        P31 Larger ( Square Circle ) ;
+        P32 Darker ( Square Circle ) ;
+        P33 Above ( Circle Square ) ;
+        P34 InFront ( Square Circle ) ;
+        P35 Category ( B ) ;
+        { exemplar B4: 0001
+        P31 Larger ( Square Circle ) ;
+        P32 Darker ( Square Circle ) ;
+        P33 Above ( Square Circle ) ;
+        P34 InFront ( Circle Square ) ;
+        P35 Category ( B ) ;
+    end { def props
+        
+    { now group the props together into exemplars
+    DefGroups
+        A1
+            Props: P1 P2 P3 P4 P5 %
+            %% end of group
+        A2
+            Props: P6 P7 P8 P9 P10 %
+            %% end of group
+        A3
+            Props: P11 P12 P13 P14 P15 %
+            %% end of group
+        A4
+            Props: P16 P17 P18 P19 P20 %
+            %% end of group
+        B1
+            Props: P21 P22 P23 P24 P25 %
+            %% end of group
+        B2
+            Props: P26 P27 P28 P29 P30 %
+            %% end of group
+        B3
+            Props: P31 P32 P33 P34 P35 %
+            %% end of group
+        B4
+            Props: P36 P37 P38 P39 P40 %
+            %% end of group
+    end { def groups
+        
+done { analog 1: AllExemplars
+
+Analog Test
+    { the to-be-categorized exemplar
+    DefPreds
+        Larger [ rel_size larger ] [ rel_size smaller ] ;
+        Darker [ rel_shade darker ] [ rel_shade lighter ] ;
+        Above [ rel_loc above ] [ rel_loc below ] ;
+        InFront [ rel_depth in_front ] [ rel_depth behind ] ;
+    end
+    DefObjs
+        Circle part circle ;
+        Square part square ;
+    end
+    DefProps
+        { make this one an A1, sans category label
+        P1 Larger ( Square Circle ) ;
+        P2 Darker ( Circle Square ) ;
+        P3 Above ( Circle Square ) ;
+        P4 InFront ( Circle Square ) ;
+    end { defprops
+    { amke a group out of 'em
+    DefGroups
+        Test
+            Props: P1 P2 P3 P4 %
+            %% end of group
+    end { def groups
+done { analog 2: Test
+
+Sequence
+    Driver=[ 1 ]
+    { no recip: try retrieval at first
+    Order=[ P1 P2 P3 P4 h ]
+Done
+        
+        
+        
+        

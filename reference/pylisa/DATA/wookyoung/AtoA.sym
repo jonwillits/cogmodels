@@ -1,0 +1,46 @@
+Note: wookyoung/AtoA.sym 
+Note: What mapping does LISA discover when it maps an A (1101) to an A (1110)
+{
+Analog 1101
+   DefPreds
+     larger 2 larger ;
+     darker 2 darker ;
+     above 2 above ;
+     front 2 front ;
+   end ; { def preds
+   DefObjs
+     circle circle ;
+     square square ;
+   end ; { def objs
+   DefProps
+     P1 larger ( circle square ) 10 ;
+     P2 darker (circle square ) 10 ;
+     P3 above ( circle square ) ;
+     P4 front ( square circle ) ;
+   end ; { def props
+done ; { analog 1
+{
+Analog 1110
+   DefPreds
+     larger 2 larger ;
+     darker 2 darker ;
+     above 2 above ;
+     front 2 front ;
+   end ; { def preds
+   DefObjs
+     circle circle ;
+     square square ;
+   end ; { def objs
+   DefProps
+     P1 larger ( circle square ) ;
+     P2 darker (circle square ) ;
+     P3 above ( square circle ) ;
+     P4 front ( circle square ) ;
+   end ; { def props
+done ; { analog 1
+{
+Sequence
+   Driver=[ 0 ] { set target to driver
+   Recip=[ 1 ]  { set source to recip
+   Order=[ R ( 5 1 ) ] { and fire all three props
+done ;

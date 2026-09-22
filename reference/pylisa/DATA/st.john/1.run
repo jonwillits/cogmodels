@@ -1,0 +1,96 @@
+Note: st.john/1.sym  first (easiest) attempt to do st john w/ pyLISA
+
+Note: this file does not require any ssl -- just mapping
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P1
+Seq. 1    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P2
+Seq. 2    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P3
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Target-Joan to Source-Bill:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+    From P2 to:    P2 = 0.982
+    From P3 to:    P3 = 0.990
+  Preds:
+    From HAS1 to:    HAS1 = 0.968
+    From HAS2 to:    HAS2 = 0.968
+    From GOTO1 to:    GOTO1 = 0.968
+    From GOTO2 to:    GOTO2 = 0.968
+    From WANT1 to:    WANT1 = 0.968
+    From WANT2 to:    WANT2 = 0.968
+  Objs:
+    From JOAN to:    BILL = 0.970
+    From CIVIC to:    JEEP = 0.968
+    From LAX to:    BEACH = 0.968
+
+From Source-Bill to Target-Joan:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+    From P2 to:    P2 = 0.982
+    From P3 to:    P3 = 0.990
+    From P4 to:
+    From P5 to:
+  Preds:
+    From HAS1 to:    HAS1 = 0.968
+    From HAS2 to:    HAS2 = 0.968
+    From GOTO1 to:    GOTO1 = 0.968
+    From GOTO2 to:    GOTO2 = 0.968
+    From WANT1 to:    WANT1 = 0.968
+    From WANT2 to:    WANT2 = 0.968
+    From DRIVETO1 to:
+    From DRIVETO2 to:
+    From DRIVETO3 to:
+    From CAUSE1 to:
+    From CAUSE2 to:
+  Objs:
+    From BILL to:    JOAN = 0.970
+    From JEEP to:    CIVIC = 0.968
+    From BEACH to:    LAX = 0.968
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+Analog Target-Joan:
+
+Props:
+
+Props:
+
+Preds:
+
+Objs:
+
+Analog Source-Bill:
+
+Props:
+
+Props:
+
+Preds:
+
+Objs:

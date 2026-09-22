@@ -1,0 +1,80 @@
+Note: GAT FTLD Task
+Note: Distractor Condition: Normal subject
+Note: Assume that Semantic Distractors share some predicate semantic units with
+Note:  Assume perceptual distractors/Library/Frameworks/Python.framework/Versions/2.4/PyLISA2.4/VersBeta3/DATA/Bob/GatTask/distract2.bat share some object semantic unit overlap
+
+Parameters
+  { SemanticNoise 0.01
+  SemanticDeath 0.1
+  HebbLearningRate 0.9
+  SaveGroupHebbs False
+  SavePropHebbs False
+  SaveSPHebbs False
+Done
+
+Analog Problem
+  DefPreds
+    Right 2 r1 r2 r3 r4 r5 r6 ;
+  end { defpreds
+  DefObjs
+    A object a1 a2 ;
+    B object b1 b2 ;
+  end { defobjs
+  DefProps
+    P1 Right ( A B ) ;
+  end { defprops
+Done { analog 0
+
+Analog LTM
+  DefPreds
+    Right_a 2 r1 r2 r3 r4 r5 r6 ; { shares 1 - 8
+    Right_b 2 r1 r2 r3 r4 r5 r6 ; { shares 1 - 7 and 12
+    Right_c 2 r1 r2 r3 r4 r5 r6 ; { shares 1 - 6 and 11 - 12
+    Right_d 2 r1 r2 r3 r4 r5 r6 ; { shares 1 - 5 and 10 - 12
+    WrongS_a 2 r1 r2 s1 s2 s3 s4 ;
+    WrongS_b 2 r1 r2 s1 s2 s3 s4 ;
+    WrongS_c 2 r1 r2 s1 s2 s3 s4 ;
+    WrongS_d 2 r1 r2 s1 s2 s3 s4 ;
+    WrongP 2 p1 p2 p3 p4 p5 p6 ;
+    { WrongU 2 u1 u2 u3 u4 u5 u6 u7 u8 u9 u10 u11 u12 ;
+  end { defpreds
+  DefObjs
+    C1 object c1 c2 c3 c4 ;
+    C2 object c1 c2 c5 c6 ;
+    C3 object c1 c2 c7 c8 ;
+    C4 object c1 c2 c9 c10 ;
+    C5 object c1 c2 c11 c12 ;
+    C6 object c1 c2 c13 c14 ;
+    C7 object c1 c2 c15 c16 ;
+    C8 object c1 c2 c17 c18 ;
+    C9 object c1 c2 c19 c20 ;
+    D1 object d1 d2 d3 d4 ;
+    D2 object d1 d2 d5 d6 ;
+    D3 object d1 d2 d7 d8 ;
+    D4 object d1 d2 d9 d10 ;
+    S1 object s1 s2 s3 s4 ;
+    S2 object s1 s2 s5 s6 ;
+    S3 object s1 s2 s7 s8 ;
+    S4 object s1 s2 s9 s10 ;
+    P object c1 p1 p2 p3 ;
+    U object u1 u2 u3 u4;
+  end { defobjs
+  DefProps
+    P1 Right_a ( C1 D1 ) ;
+    P2 Right_b ( C2 D2 ) ;
+    P3 Right_c ( C3 D3 ) ;
+    P4 Right_d ( C4 D4 ) ;
+    P5 WrongS_a ( C5 S1 ) ;
+    P6 WrongS_b ( C6 S2 ) ;
+    P7 WrongS_c ( C7 S3 ) ;
+    P8 WrongS_d ( C8 S4 ) ;
+    P9 WrongP ( C9 P ) ;
+    { P5 WrongU ( C U ) ;
+  end { defpreds
+Done { analog 1
+
+Sequence
+  Driver=[ 0 ] { set analog 0 to driver
+  Recip=[ 1 ]
+  Order=[ P1 h P1 h ]
+Done.

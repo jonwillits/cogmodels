@@ -1,0 +1,6248 @@
+{
+ "sym": "DATA/lovetri/lovetri7.sym",
+ "preset": "Hummel2007",
+ "runs": 10,
+ "firstSeed": 1,
+ "results": [
+  {
+   "run": 1,
+   "seed": 1,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 471,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10,
+      "SP2.1": 15,
+      "SP2.2": 15
+     },
+     "settleRounds": 143,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 244,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "seed": 2,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 470,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15,
+      "SP2.1": 15,
+      "SP2.2": 15
+     },
+     "settleRounds": 106,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 239,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 240,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 239,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  },
+  {
+   "run": 3,
+   "seed": 3,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 466,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 15,
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 49,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 240,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 245,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  },
+  {
+   "run": 4,
+   "seed": 4,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 467,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 15,
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 49,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 240,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 237,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 240,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 10,
+      "SP3.2": 15
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  },
+  {
+   "run": 5,
+   "seed": 5,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 468,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 15,
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 50,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 239,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  },
+  {
+   "run": 6,
+   "seed": 6,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 467,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10,
+      "SP2.1": 15,
+      "SP2.2": 15
+     },
+     "settleRounds": 50,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  },
+  {
+   "run": 7,
+   "seed": 7,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 473,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 15,
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 49,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 249,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 10,
+      "SP3.2": 15
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  },
+  {
+   "run": 8,
+   "seed": 8,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 475,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10,
+      "SP2.1": 15,
+      "SP2.2": 15
+     },
+     "settleRounds": 50,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 241,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 243,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 239,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 10,
+      "SP3.2": 15
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  },
+  {
+   "run": 9,
+   "seed": 9,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 475,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 15,
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 49,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 12
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 242,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 237,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 10,
+      "SP3.2": 15
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      },
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  },
+  {
+   "run": 10,
+   "seed": 10,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1",
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 470,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3,
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 15,
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 49,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 240,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 4,
+     "driver": "Target",
+     "recips": [
+      "Source"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 234,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 5,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 237,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target": 0.8994,
+      "Schema": 0.9807
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source",
+     "recips": [
+      "Target",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 237,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 10,
+      "SP3.2": 15
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target": 0.9235,
+      "Schema": 0.9809
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source",
+     "fromUnit": "P1",
+     "to": "Target",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.1",
+     "to": "Target",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES1",
+     "to": "Target",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "AMY",
+     "to": "Target",
+     "toUnit": "ABE",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP1.2",
+     "to": "Target",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "LOVES2",
+     "to": "Target",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "BILL",
+     "to": "Target",
+     "toUnit": "BETH",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source",
+     "fromUnit": "P2",
+     "to": "Target",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.1",
+     "to": "Target",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "SP2.2",
+     "to": "Target",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source",
+     "fromUnit": "CAT",
+     "to": "Target",
+     "toUnit": "CHAD",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES2\"",
+     "to": "Source",
+     "toUnit": "LOVES2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"LOVES1\"",
+     "to": "Source",
+     "toUnit": "LOVES1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"AMY\"",
+     "to": "Source",
+     "toUnit": "AMY",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9823
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAT\"",
+     "to": "Source",
+     "toUnit": "CAT",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS2\"",
+     "to": "Source",
+     "toUnit": "JEALOUS2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Target",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEALOUS1\"",
+     "to": "Source",
+     "toUnit": "JEALOUS1",
+     "type": "Pred",
+     "weight": 0.9677
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "CHAD"
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "ABE"
+      }
+     ]
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Target",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"LOVES1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"LOVES2\"",
+       "arg": "\"CAT\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"JEALOUS2\"",
+       "arg": "\"CAT\""
+      },
+      {
+       "pred": "\"JEALOUS1\"",
+       "arg": "\"AMY\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "POSITIVE2": 1.0,
+      "STRONG2": 1.0,
+      "LOVES2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"LOVES1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "POSITIVE1": 1.0,
+      "STRONG1": 1.0,
+      "LOVES1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS2\"",
+     "semantics": {
+      "EMOTION2": 1.0,
+      "STRONG2": 1.0,
+      "NEGATIVE2": 1.0,
+      "JEALOUS2": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"JEALOUS1\"",
+     "semantics": {
+      "EMOTION1": 1.0,
+      "STRONG1": 1.0,
+      "NEGATIVE1": 1.0,
+      "JEALOUS1": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.636,
+      "MALE": 0.367,
+      "BILL": 0.367,
+      "BETH": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"AMY\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "AMY": 0.367,
+      "MALE": 0.636,
+      "ABE": 0.636
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"CAT\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.367,
+      "MALE": 0.636,
+      "CAT": 0.367,
+      "CHAD": 0.636
+     }
+    }
+   ]
+  }
+ ]
+}

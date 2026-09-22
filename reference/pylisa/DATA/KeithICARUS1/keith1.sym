@@ -1,0 +1,38 @@
+Note: Keith's ICARUS simulations from his email of 11/22/10
+Note: (1) blizzard : snowflake :: army : soldier   (cross-domain, slow "true")
+Note: (2) blizzard : snowflake :: monsoon : raindrop (within-domain, fast "true")
+Note: (3) blizzard : snowflake :: tornado : cloud (false)
+Note: Approach is to use LISA's similarity engine to do this: Can analog MIP similarity serve as an index of analogy validity?
+Note: This sym file implements analogy 1 above
+
+Analog snow
+  DefPreds
+    part_of 2 part whole disorganized unstructured natural ;
+  end { defpreds
+  DefObjs
+    snowflake weather water snow small ice crystal ;
+    blizzard weather water snow storm much large dangerous ;
+  end { defobjs
+  DefProps
+    P1 part_of ( snowflake blizzard ) ;
+  end { defprops
+Done { analog 0
+
+Analog army
+  DefPreds
+    part_of 2 part whole organized structured social ;
+  end { defpreds
+  DefObjs
+    soldier human person adult fighter army obedient soldier ;
+    army human people adults fighters army organized group ;
+  end { defobjs
+  DefProps
+    P1 part_of ( soldier army ) ;
+  end { defpreds
+Done { analog 1
+Sequence
+  Driver=[ 0 ] { set analog 0 to driver
+  Recip=[ 1 ] { set analog 1 to recip
+  { sim_on means turn similarity calculation on 
+  Order=[ sim_on P1 h ]
+Done.

@@ -1,0 +1,67 @@
+Run of LISA Version 1.00; last modified 10/08/07
+
+Note: What does LISA do with mismatched hierarchy?
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Example2    Recip : Example1    Fire control:props    Phase set: P1
+Seq. 1    Driver:Example2    Recip : Example1    Fire control:props    Phase set: P2
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Example1 to Example2:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.982
+    From P2 to:    P2 = 0.990
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.993
+    From SP1.2 to:    SP1.2 = 0.993
+    From SP2.1 to:    SP2.1 = 0.993
+    From SP2.2 to:    SP2.2 = 0.992
+  Preds:
+    From F1 to:    G1 = 0.968
+    From F2 to:    G2 = 0.968
+    From G1 to:    F1 = 0.968
+    From G2 to:    F2 = 0.968
+  Objs:
+    From X to:    A = 0.969
+    From Y to:    B = 0.969
+    From Z to:    C = 0.970
+
+From Example2 to Example1:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.982
+    From P2 to:    P2 = 0.990
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.993
+    From SP1.2 to:    SP1.2 = 0.993
+    From SP2.1 to:    SP2.1 = 0.993
+    From SP2.2 to:    SP2.2 = 0.992
+  Preds:
+    From F1 to:    G1 = 0.968
+    From F2 to:    G2 = 0.968
+    From G1 to:    F1 = 0.968
+    From G2 to:    F2 = 0.968
+  Objs:
+    From A to:    X = 0.969
+    From B to:    Y = 0.969
+    From C to:    Z = 0.970
+

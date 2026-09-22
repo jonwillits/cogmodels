@@ -1,0 +1,37 @@
+Note: LoveTri9 Made from lovetri4
+Note: difficult mapping but no inference or groups (keep it simple)
+Note: purpose is to test mapping algorithm
+Analog Amy&Bill
+  Defpreds
+    Loves 2 emotion positive strong loves ;
+    Jealous 2 emotion negative strong jealous ;
+  end; { def preds
+  Defobjs
+     Amy human adult female amy ;
+     Bill human adult male bill ;
+     Cat  human adult female cat ;
+  end; { def objs
+  DefProps
+     P1 Loves ( Amy Bill ) ; { NOTE: New prop syntax! 
+     P2 Loves ( Bill Cat ) ; {       Pred on the OUTSIDE of the parens!
+  end ; { def props
+done ; { analog 1
+Analog Abe&Beth
+  Defpreds
+    Loves 2 emotion positive strong loves ;
+  end ; { def preds
+  Defobjs
+     Abe human adult male abe ;
+     Beth human adult female beth ;
+     Chad  human adult male chad ;
+  end ; { def objs
+  DefProps
+     P1 Loves ( Abe Beth ) ;
+     P2 Loves ( Beth Chad ) ;
+  end ; { defprops
+done ; { analog 2
+Sequence
+  Driver=[ 0 ]
+  Recip=[ 1 ]
+  Order=[ P1 P2 h P1 h P2 h ]
+Done. { whole sym file

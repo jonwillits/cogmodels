@@ -1,0 +1,110 @@
+Note: Second attempt to illustrate how (child) LISA can run mental models
+Note: This time, LISA must figure out whether the table supports the glass
+
+Analog NaivePhysics
+  DefPreds
+    support 2 support hold -fall ;
+    fall 1 fall descend gravity break ;
+    unsupported 1 -support -hold fall ;
+    not 1 negate not false ;
+    cause 2 cause relation ;
+    under 2 below spatial under ;
+    beside [ nextTo spatial1 spatial2 beside ] [ nextTo spatial1 spatial2 beside ] ;
+  end
+  DefObjs
+    supporter solid strong horizontal supporter ;
+    supported light supported ;
+  end
+  DefProps
+    P1 support ( supporter supported ) ;
+    P2 fall ( supported ) ;
+    P3 not ( P2 ) ;
+    P4 cause ( P1 P3 ) ;
+    P5 unsupported ( supported ) ;
+    P6 cause ( P5 P2 ) ;
+    P7 under ( supporter supported ) ;
+    P8 cause ( P7 P1 ) ;
+    P9 beside (supporter supported ) ;
+    P10 cause ( P9 P5 ) ;
+  end
+  DefGroups
+    G1
+      Props: P1 %
+      Semantics: cause %
+      %%
+    G2
+      Props: P2 P3 %
+      Semantics: effect %
+      %%
+    G3 { support prevents fallling
+      Groups: G1 G2 %
+      Props: P4 %
+      Semantics: causeEffect
+      %%
+    G4
+      Props: P5 %
+      Semantics: cause %
+      %%
+    G5
+      Props: P2 %
+      Semantics: effect %
+      %%
+    G6
+      Groups: G4 G5 %
+      Props: P6 %
+      Semantics: causeEffect %
+      %%
+    G7 { under causes support: cause role
+      Props: P7 %
+      Semantics: cause %
+      %%
+    G8 { under causes support: effect role
+      Props: P1 %
+      Semantics: effect %
+      %%
+    G9 { under causes support
+      Props: P8 %
+      Gropups: G7 G8 %
+      Semantics: causeEffect %
+      %%
+    G10 { beside causes non-support: cause role
+      Props: P9 %
+      Semantics: cause %
+      %%
+    G11 { beside causes non-support: effect role
+      Props: P5 %
+      Semantics: effect %
+      %%
+    G12 { beside causes non-support
+      Props: P10 %
+      Groups: G10 G11 %
+      Semantics: causeEffect %
+      %%
+  end
+done { naiive physics analog
+
+Analog SupportedGlass
+  DefPreds
+    under 2 below spatial under ;
+  end
+  DefObjs
+    glass glass container drink fragile ;
+    table large horizontal flat furniture table ;
+  end
+  DefProps
+    P1 under ( Table Glass ) ;
+  end
+done { glass example
+
+Sequence { lots of hand-holding here
+  Driver=[ 1 ]
+  Recip=[ 0 ]
+  Order=[ P1 h ]
+  { turn control over to the schema
+  SSL_OK
+  Driver=[ 0 ]
+  Recip=[ 1 ]
+  Order=[ P7 h P1 h  ] { make LISA infer supported
+  Order=[ P2 h P3 h P4 h ] { infer ~fall and causal relation
+done.
+    

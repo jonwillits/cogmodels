@@ -1,0 +1,96 @@
+Note: LoveTri4  Made from lovetri
+
+Note: purpose is to test random and group-based fire control
+
+Note: using an analogy that is difficult to map
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Amy&Bill    Recip : Abe&Beth    Fire control:groups    Phase set: P2 P1
+
+Similarities as of step 0:
+Similarity of Amy&Bill to Abe&Beth:
+MOP Sim   = 0.472 
+MIP Sim   = 0.518 
+Total Sim = 0.990 
+Similarity of Abe&Beth to Amy&Bill:
+MOP Sim   = 0.472 
+MIP Sim   = 0.797 
+Total Sim = 1.269 
+
+Seq. 1    Driver:Amy&Bill    Recip : Abe&Beth    Fire control:groups    Phase set: P2
+
+Similarities as of step 1:
+Similarity of Amy&Bill to Abe&Beth:
+MOP Sim   = 0.472 
+MIP Sim   = 0.516 
+Total Sim = 0.988 
+Similarity of Abe&Beth to Amy&Bill:
+MOP Sim   = 0.472 
+MIP Sim   = 0.793 
+Total Sim = 1.266 
+
+Seq. 2    Driver:Amy&Bill    Recip : Abe&Beth    Fire control:groups    Phase set: P1
+
+Similarities as of step 2:
+Similarity of Amy&Bill to Abe&Beth:
+MOP Sim   = 0.472 
+MIP Sim   = 0.516 
+Total Sim = 0.988 
+Similarity of Abe&Beth to Amy&Bill:
+MOP Sim   = 0.472 
+MIP Sim   = 0.793 
+Total Sim = 1.266 
+
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Amy&Bill to Abe&Beth:
+  Groups:
+    From G1 to:    G1 = 0.969
+    From G2 to:
+    From G3 to:
+  Props:
+    From P1 to:    P1 = 0.992
+    From P2 to:    P2 = 0.992
+    From P3 to:
+  Preds:
+    From LOVES1 to:    LOVES1 = 0.968
+    From LOVES2 to:    LOVES2 = 0.968
+    From JEALOUS1 to:
+    From JEALOUS2 to:
+  Objs:
+    From AMY to:    ABE = 0.968
+    From BILL to:    BETH = 0.968
+    From CAT to:    CHAD = 0.968
+
+From Abe&Beth to Amy&Bill:
+  Groups:
+    From G1 to:    G1 = 0.969
+  Props:
+    From P1 to:    P1 = 0.992
+    From P2 to:    P2 = 0.992
+  Preds:
+    From LOVES1 to:    LOVES1 = 0.968
+    From LOVES2 to:    LOVES2 = 0.968
+  Objs:
+    From ABE to:    AMY = 0.968
+    From BETH to:    BILL = 0.968
+    From CHAD to:    CAT = 0.968
+

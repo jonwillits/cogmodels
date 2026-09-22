@@ -1,0 +1,58 @@
+Run of LISA Version 1.00; last modified 8/27/07
+
+Note: Derek/Hanoi1.sym {
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.1000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:RuleLHS    Recip : Board    Fire control:props    Phase set: P1
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From RuleLHS to Board:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.993
+    From SP1.2 to:    SP1.2 = 0.993
+  Preds:
+    From MOVETO1 to:    MOVETO1 = 0.969
+    From MOVETO2 to:    MOVETO2 = 0.966
+  Objs:
+    From PEG to:    PEG1 = 0.960
+    From DISK to:    DISKA = 0.969
+
+From Board to RuleLHS:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+    From P2 to:
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.993
+    From SP1.2 to:    SP1.2 = 0.993
+    From SP2.1 to:
+    From SP2.2 to:
+  Preds:
+    From MOVETO1 to:    MOVETO1 = 0.969
+    From MOVETO2 to:    MOVETO2 = 0.966
+  Objs:
+    From PEG1 to:    PEG = 0.960
+    From PEG2 to:
+    From DISKA to:    DISK = 0.969
+

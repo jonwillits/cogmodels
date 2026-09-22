@@ -1,0 +1,48 @@
+Note: st.john/1.sym  first (easiest) attempt to do st john w/ pyLISA
+Note: this file does not require any ssl -- just mapping
+{
+Analog Target-Joan
+   DefPreds
+     has 2 state has1 has2 has3 ;
+     goto 2 ptrans goto1 goto2 goto3 ;
+     want 2 state want 1 want2 want3 ;
+   end ; { def preds
+   DefObjs
+     Joan human adult female joan1 joan2 joan3 ;
+     Civic artifact vehicle car civic japanese good civic ;
+     LAX location airport commerce transport flight airport ;
+   end ; { def objs
+   DefProps
+     P1 has ( Joan Civic ) ;
+     P2 goto ( Joan LAX ) ;
+     P3 want ( Joan P2 ) ;
+   end ; { def props
+done ; { analog 1
+{
+Analog Source-Bill
+   DefPreds
+     has 2 state has1 has2 has3 ;
+     goto 2 ptrans goto1 goto2 goto3 ;
+     want 2 state want 1 want2 want3 ;
+     driveto 3 ptrans goto drive vehicle drive2 drive3 ;
+     cause 2 cause cause2 cause3 cause4 ;
+   end ; { def preds
+   DefObjs
+     Bill human adult male bill1 bill2 bill3 ;
+     Jeep artifact vehicle car jeep american shit jeep ;
+     Beach location beach commerce recreation ocean sand beach ;
+   end ; { def objs
+   DefProps
+     P1 has ( Bill Jeep ) ;
+     P2 goto ( Bill Beach ) ;
+     P3 want ( Bill P2 ) ;
+     P4 driveto ( Bill Jeep Beach ) ;
+     P5 cause ( P3 P4 ) ;
+   end ; { def props
+done ; { analog 1
+{
+Sequence
+   Driver=[ 0 ] { set target to driver
+   Recip=[ 1 ]  { set source to recip
+   Order=[ P1 h P2 h P3 h ] { and fire all three props
+done ;

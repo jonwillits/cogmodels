@@ -1,0 +1,52 @@
+Note: Boys & Dogs analogy: Bad version
+Note: Does LISA fail w/ god-like WM but without volleying?
+Note: But be sure to set retrieval threshold to 0.3
+Note:   prior to running.
+Analog Boys
+  DefObjs
+    Bill obj boy bill ;
+    Steve obj boy steve ;
+    Tom obj boy tom ;
+  end ; { def objs
+  DefPreds
+    smart 1 role smart ;
+    tall 1 role tall ;
+    timid 1 role timid ;
+  end ; { def preds
+  DefProps
+    P1 smart ( Bill ) ;
+    P2 tall ( Bill ) ;
+    P3 smart ( Steve ) ;
+    P4 timid ( Tom ) ;
+    P5 tall ( Tom ) ;
+  end ; { def props
+done { analog 1
+Analog Dogs
+  DefObjs
+    Rover obj dog rover ;
+    Fido obj dog fido ;
+    Blackie obj dog blackie ;
+  end ; { def objs
+  DefPreds
+    hungry 1 role hungry ;
+    friendly 1 role friendly ;
+    frisky 1 role frisky ;
+  end ; { def preds
+  DefProps
+    P1 hungry ( Rover ) ;
+    P2 friendly ( Rover ) ;
+    P3 hungry ( Fido ) ;
+    P4 frisky ( Blackie ) ;
+    P5 friendly ( Blackie ) ;
+  end ; { def props
+done { analog 1
+Sequence
+  Driver=[ 0 ]
+  Recip=[ 1 ]
+  Order=[ P1 P2 P3 P4 P5 h ]
+  { now volley
+  Driver=[ 1 ]
+  Recip=[ 0 ]
+  Order=[ P1 P2 P3 P4 P5 h ] { only update at very end
+Done. { whole sym file
+  

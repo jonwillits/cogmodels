@@ -1,0 +1,61 @@
+Note: Boys & Dogs analogy
+
+Note: Can LISA do it w/ god-like WM AND volleaying?
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Unlimited WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Boys    Recip : Dogs    Fire control:props    Phase set: P1 P2 P3 P4 P5
+Seq. 1    Driver:Dogs    Recip : Boys    Fire control:props    Phase set: P1 P2 P3 P4 P5
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Boys to Dogs:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.982
+    From P2 to:    P2 = 0.982
+    From P3 to:    P3 = 0.982
+    From P4 to:    P4 = 0.982
+    From P5 to:    P5 = 0.982
+  Preds:
+    From SMART1 to:    HUNGRY1 = 0.982
+    From TALL1 to:    FRIENDLY1 = 0.982
+    From TIMID1 to:    FRISKY1 = 0.964
+  Objs:
+    From BILL to:    ROVER = 0.979
+    From STEVE to:    FIDO = 0.957
+    From TOM to:    BLACKIE = 0.979
+
+From Dogs to Boys:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.982
+    From P2 to:    P2 = 0.982
+    From P3 to:    P3 = 0.982
+    From P4 to:    P4 = 0.982
+    From P5 to:    P5 = 0.982
+  Preds:
+    From HUNGRY1 to:    SMART1 = 0.982
+    From FRIENDLY1 to:    TALL1 = 0.982
+    From FRISKY1 to:    TIMID1 = 0.964
+  Objs:
+    From ROVER to:    BILL = 0.979
+    From FIDO to:    STEVE = 0.957
+    From BLACKIE to:    TOM = 0.979
+

@@ -1,0 +1,70 @@
+Note: karl&renee/physics/1.sym
+Note: First earnest attempt to simulate an aspect of naive physics
+Note: This is a simulation of a kid who understands that an inanimate object needs to have its supporter under it
+Note:   in order to be supported
+Note: Situation is glass (inanimate) with a table under it --> supported (Glass) --> not-fall (Glass)
+Note: Made from karl&renee/toy2c.sym
+
+Analog NaivePhysics
+  DefPreds
+    support 2 support hold -fall ;
+    fall 1 fall descend gravity break ;
+    unsupported 1 -support -hold fall ;
+    not 1 negate not false ;
+    under [ near spatial below under -above -over ] [ near spatial above over -below -under ] ;
+    beside [ near spatial nextTo beside ] [ near spatial nextTo beside ] ;
+    inanimate [ object -animate -movealone -hasmind -hasgoals ] ;
+    animate [ object animate movealone hasmind hasgoals ] ;
+  end
+  DefObjs
+    supporter solid strong horizontal supporter ;
+    supported light supported ;
+  end
+  DefProps
+    P1 support ( supporter supported ) ;
+    P2 fall ( supported ) ;
+    P3 not ( P2 ) ;
+    P4 unsupported ( supported ) ;
+    P5 under ( supporter supported ) ;
+    P6 beside ( supporter supported ) ;
+    P7 inanimate ( supported ) ;
+    P8 animate ( supported ) ;
+  end
+  DefGroups
+    Cause ( P1 ) ( P2 P3 ) 1.0 ; { will automatically be named "CE-1"
+    Cause ( P4 ) ( P2 ) 1.0 ;  { CE-2
+    Cause ( P5 ) ( P1 ) 1.0 ;  { CE-3
+    Cause ( P6 P7 ) ( P4 ) 1.0 ;  { CE-4: if beside and inanimate then not supported
+    Cause ( P6 P8 ) ( P1 ) 1.0 ;  { CE-5: if beside and animate then supported
+  end
+done { naiive physics analog
+
+Analog SupportedGlass
+  DefPreds
+    under [ near spatial below under -above -over ]   [ near spatial above over -below -under ] ;
+    beside [ near spatial nextTo beside ]              [ near spatial nextTo beside ] ;
+    inanimate [ object -animate -movealone -hasmind -hasgoals ] ;
+    animate [ object animate movealone hasmind hasgoals ] ;
+  end
+  DefObjs
+    glass glass container drink fragile ;
+    table large horizontal flat furniture table ;
+  end
+  DefProps
+    P1 inanimate ( Glass ) ;
+    P2 under ( Table Glass ) ;
+  end
+done { glass example
+
+Sequence { lots of hand-holding here
+  Driver=[ 1 ]
+  Recip=[ 0 ]
+  Order=[ P1 h P2 h ]
+  { turn control over to the schema
+  SSL_OK
+  Driver=[ 0 ]
+  Recip=[ 1 ]
+  Order=[ CE-3 ( 3 1 ) ] { make LISA infer supported
+  Order=[ CE-1 ( 5 1 ) ] { infer ~fall and causal relation
+done.
+    

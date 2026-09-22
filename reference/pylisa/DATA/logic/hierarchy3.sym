@@ -1,0 +1,36 @@
+Note: What does LISA do with mismatched hierarchy?
+Analog Example1
+  Defpreds
+    f [ role role1 ] [ role role2 ] ;
+    g [ role role1 ] [ role role2 ] ;
+  end; { def preds
+  Defobjs
+    x x xx xxx object ;
+    y y yy yyy object ;
+    z z zz zzz object ;
+  end; { def objs
+  DefProps
+    P1 f ( x y ) ;
+    P2 g ( z P1 ) ;
+  end ; { def props
+done ; { analog 1
+Analog Example2
+  Defpreds
+    f [ role role1 ] [ role role2 ] ;
+    g [ role role1 ] [ role role2 ] ;
+  end ; { def preds
+  Defobjs
+    a a aa aaa object ;
+    b b bb bbb object ;
+    c a cc ccc object ;
+  end ; { def objs
+  DefProps
+     P1 g ( a b ) ;
+     P2 f ( c P1 ) ;
+  end ; { defprops
+done ; { analog 2
+Sequence
+  Driver=[ 1 ]
+  Recip=[ 0 ]
+  Order=[ P1 h P2 h ]
+Done. { whole sym file

@@ -1,0 +1,54 @@
+Note: First attempt to illustrate how LISA might simulate trait inferences
+
+Analog PeopleSchema
+  DefPreds
+    lawyer 1 human adult professional smart rich lawyer ;
+    professor 1 human adult professional smart poor professor ;
+    dishonest 1 personality trait -honest lie ;
+    honest 1 personality trait honest -lie ;
+  end
+  DefObjs
+    person1 human person ;
+    person2 human person ;
+  end
+  DefProps
+    P1 lawyer ( person1 ) ;
+    P2 dishonest ( person1 ) ;
+    P3 professor ( person2 ) ;
+    P4 honest ( person2 ) ;
+  end
+  DefGroups
+    G1
+      Props: P1 P2 %
+      Semantics: lawyer %
+      %%
+    G2
+      Props: P3 P4 %
+      Semantics: professor %
+      %%
+  end
+done { naiive physics analog
+
+Analog JoeLawyer
+  DefPreds
+    lawyer 1 human adult professional smart rich lawyer ;
+  end
+  DefObjs
+    Joe human adult male joe ;
+  end
+  DefProps
+    P1 lawyer ( Joe ) ;
+  end
+done { Joe Lawyer
+
+Sequence
+  Driver=[ 1 ]
+  Recip=[ 0 ]
+  Order=[ P1 h ]
+  { turn control over to the schema
+  SSL_OK
+  Driver=[ 0 ]
+  Recip=[ 1 ]
+  Order=[ G1 ( 2 1 ) ]  { random order --> success probabilistic
+done.
+    

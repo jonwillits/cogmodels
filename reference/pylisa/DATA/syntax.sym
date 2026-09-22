@@ -1,0 +1,144 @@
+Note: Syntax.sym
+Note: This is the file for illustrating the syntax of a PyLISA .sym file
+
+{ Any text following 'Note:' gets copied into the output file as a note 
+{     to yourself.
+{ Any text, like this, following a curly brace is treated as a comment and 
+{     ignored.
+
+Parameters
+  UnlimitedWM         True    { or False    (True by default)
+  SemanticNoise       0.5     { 0.0...1.0   (0 by default)
+  SemanticDeath       0.1     { 0.0...1.0   (0 by default)
+  Attention           1.0     { 0.0...1.0   (1 by default)
+  WithinGroupSupport  1.0     { 0.0...whatever (1.0 by default)
+  DriverInhibition    1.0     { 0.0...1.0   (1 by default)
+  RecipInhibition     0.9     { 0.0...1.0   (1 by default)
+  HebbLearningRate    0.7     { 0.0...1.0   (1 by default)
+  BailUponSettling    False   { or True     (False by default)
+  MappingAlgorithm    H&H9703 { or Vers142  (Vers142 by default)
+Done  { end parameter assignment with Done
+
+{ Issuing the Parameters command, as above, allows you to set
+{      the run parameters in the sym file
+{ The above illustrates all the parameters is is possible to set and the
+{     values they can take.  It is not necessary to put the parameters on
+{     separate lines, but it sure improves readability if you do.
+{ It IS necessary (oh, so very, very necessary) to be sure numeric parameters
+{     are followed by numeric values, boolean by boolean, and 
+{     MappingAlgorithm by either H&H9703 or Vers142.  Failing to so so
+{     will minimally fail to set the parameter and (due to the limitations of
+{     the programmer) is likely to result in a runtime error
+{ It is NOT necessary to set the parameters.  If you do not set one, then
+{      it will simply assume its default value (as set in dataTypes.py)
+{ You can also set the parameter values at runtime by using the 
+{     (M)odify parameters (r)un parameter options in the main menu
+{ Parameters set in the main menu OVERRIDE parameter values set here
+{     iff you read the file before you set the parameters in the main menu.
+{     And parameters set here override parameters set in the main menu iff you 
+{     set them in the main menu first.  In other words, The Last Assignment
+{     is the Actual Assignment.
+
+{ start an analog with the word Analog, followed by the analog's name
+{
+Analog Alex&Betty
+  Defpreds { Defpreds tells the parser to define predicates
+    { the following is an auto-coded pred: 
+    { The first word is the base name of the pred
+    { the number is the number of roles
+    { then come the base names of the semantics
+    { In response to the below, LISA will make two role units:
+    {  Loves1 and Loves2, and two copies of each semantic:
+    {  emotion1, emotion2, positive1, positive2, etc.,
+    { connecting each semantic to the pred in the same role
+    { end the pred definition with a semi-colon.  Note that not all the
+    { semantics have to be on the same line
+    {
+    Loves 2 emotion positive strong loves 
+    bloves cloves dloves hates ;
+    {
+    { NOTE that punctuation marks need to be separated from text by spaces!
+    {      This goes for punctuation fo all kinds (including braces, etc.)
+    {      The only exceptions are when the punctuation is part of a reserved
+    {      word, such as 'Note:'
+    {
+    {
+    { the following is a hand-codded pred:
+    { each open brace starts a new role.  list the semantics that connect
+    { to that role
+    hates [ emotion1 strong1 negative1 positive1 ] 
+          [ emotion2 strong2 negative2 ] ;
+  end { Use the word End; or End or end to indicate the end of Defpreds
+  Defobjs { use Defobjs to define objects
+     { the name of the object appears on teh line first, 
+     { followed by the names of its semantics
+     { a ; indicates the end of the object definition
+     { It is not necesssary to have al an object's semantics on one line
+     { as long as no semicolon appears between their semantics
+     {
+     Alex human adult { note that definition of alex continues on next line
+     male alex ;
+     Betty human adult female betty ;
+     Chuck  human adult male chuck ;
+  end {  Use the word End; or End or end to indicate the end of Defobjs
+  DefProps { use Defprops to define propositions
+     { to define a prop:
+     { first the prop name, e.g., P1
+     { then the base name of the predicate, e.g., Loves
+     { then open paren, not touching any words
+     { then the arguments: make sure their numerosity agrees with pred
+     { then close parens
+     { then the prop importance if not eth default 1.0 (not yet implemented) 
+     { finally, end with a semicolon
+     { as always, the punctuation must not touch the words
+     
+     P1 Loves ( Alex Betty ) 10 ; { NOTE: New prop syntax! 
+     P2 Loves ( Betty Chuck ) ;   {       Pred on the OUTSIDE of the parens!
+     
+     Support:  { support relations between props
+       P1 <--> P2 10  { support of 10 
+     End { support relations
+     
+  end { def props
+  
+  DefGroups
+    G1
+        Props: P1 P2 %  { the % ends the prop list
+        Semantics: cause %
+        %% { ends the group def of G1
+{    G2
+{        Props: P3 %
+{        Semantics: effect %
+{        %% { ends def of G2
+{    G3
+{        Groups: G1 G2 %
+{        Semantics: cause-relation %
+{        %%
+  end { def groups
+done { analog 1 -- use the word done to indicate done with analog
+
+Analog Abe&Beth
+  Defpreds
+    Loves 2 emotion positive strong loves ;
+  end { def preds
+  Defobjs
+     Abe human adult male abe ;
+     Beth human adult female beth ;
+     Chad  -human adult male chad ;  { note that chad is NOT human (human negated)
+  end { def objs
+  DefProps
+     P1 Loves ( Abe Beth ) ;
+     P2 Loves ( Beth Chad ) ;
+  end { defprops
+  DefGroups
+    G1
+        Props: P1 P2 %
+        Semantics: dummy group %
+        %% { ends the group def of G1
+  end { def groups
+done { analog 2
+Sequence
+  Driver=[ 1 ]  { you must tell LISA what to use as the driver
+  Recip=[ 0 ]  { and which analog(s) to use as recipient(s)
+  Order=[ P1 h P2 h ] { name the props in the order in which you wish to run them.  separate phase sets separated by 'h'
+Done { whole sym file

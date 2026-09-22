@@ -1,0 +1,66 @@
+Run of LISA Version 1.00; last modified 12/11/07
+
+Note: Syntax.sym
+Note: This is the file for illustrating the syntax of a PyLISA .sym file
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Unlimited WM
+    Semantic Noise = 0.5000
+    Semantic Death = 0.1000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 0.9000
+    Hebb Learning Rate = 0.7000
+    Bail Upon Settling = False
+    Using H&H 97/03 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Abe&Beth    Recip : Alex&Betty    Fire control:props    Phase set: P1
+Seq. 1    Driver:Abe&Beth    Recip : Alex&Betty    Fire control:props    Phase set: P2
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Alex&Betty to Abe&Beth:
+  Groups:
+    From G1 to:    G1 = 1.000
+  Props:
+    From P1 to:    P1 = 0.719
+    From P2 to:    P2 = 0.770
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.107
+    From SP1.2 to:    SP1.2 = 0.107
+    From SP2.1 to:    SP2.1 = 0.750
+    From SP2.2 to:    SP2.2 = 0.750
+  Preds:
+    From LOVES1 to:    LOVES1 = 0.797
+    From LOVES2 to:    LOVES2 = 0.797
+  Objs:
+    From ALEX to:    ABE = 0.193
+    From BETTY to:    BETH = 0.821
+    From CHUCK to:    CHAD = 0.762
+
+From Abe&Beth to Alex&Betty:
+  Groups:
+    From G1 to:    G1 = 1.000
+  Props:
+    From P1 to:    P1 = 0.719
+    From P2 to:    P2 = 0.770
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.107
+    From SP1.2 to:    SP1.2 = 0.107
+    From SP2.1 to:    SP2.1 = 0.750
+    From SP2.2 to:    SP2.2 = 0.750
+  Preds:
+    From LOVES1 to:    LOVES1 = 0.797
+    From LOVES2 to:    LOVES2 = 0.797
+  Objs:
+    From ABE to:    ALEX = 0.193
+    From BETH to:    BETTY = 0.821
+    From CHAD to:    CHUCK = 0.762
+

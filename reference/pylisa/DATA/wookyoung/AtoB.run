@@ -1,0 +1,55 @@
+Run of LISA Version 1.00; last modified 2/21/08
+
+Note: wookyoung/AtoB.sym 
+Note: What mapping does LISA discover when it maps an A (1101) to a B (0001)
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:1101    Recip : 0001    Fire control:random    Phase set: P1
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From 1101 to 0001:
+  Groups:
+  Props:
+    From P1 to:
+  SPs:
+    From SP1.1 to:
+    From SP1.2 to:
+  Preds:
+    From LARGER1 to:
+    From LARGER2 to:
+  Objs:
+    From CIRCLE to:
+    From SQUARE to:
+
+From 0001 to 1101:
+  Groups:
+  Props:
+    From P1 to:
+  SPs:
+    From SP1.1 to:
+    From SP1.2 to:
+  Preds:
+    From LARGER1 to:
+    From LARGER2 to:
+  Objs:
+    From CIRCLE to:
+    From SQUARE to:
+

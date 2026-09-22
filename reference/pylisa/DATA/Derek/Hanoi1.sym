@@ -1,0 +1,35 @@
+Note: Derek/Hanoi1.sym {
+Analog RuleLHS
+   DefPreds
+     moveto 2 ptrans goto1 goto2 goto3 ;
+   end ; { def preds
+   DefObjs
+     Peg anypeg peg ;
+     Disk anydisk disk ;
+   end ; { def objs
+   DefProps
+     P1 moveto ( Disk Peg ) ;
+   end ; { def props
+done ; { analog 1
+{
+Analog Board
+   DefPreds
+     moveto 2 ptrans goto1 goto2 goto3 ;
+   end ; { def preds
+   DefObjs
+     Peg1 peg1 peg ;
+     Peg2 peg2 peg ;
+     DiskA diskA disk ;
+   end ; { def objs
+   DefProps
+     P1 moveto ( DiskA Peg1 ) ;
+     P2 moveto ( DiskA Peg2 ) ;
+   end ; { def props
+done ; { analog 1
+{
+Sequence
+   { SemanticNoise 0.1
+   Driver=[ 0 ] { set rule to driver
+   Recip=[ 1 ]  { set board to recip
+   Order=[ P1 h ] { and fire all three props
+done ;

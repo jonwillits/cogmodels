@@ -1,0 +1,44 @@
+Note: Derek/Hanoi1.sym {
+Analog Rule
+   DefPreds
+     moveto 2 ptrans goto1 goto2 goto3 ;
+     ontop 2 state location on1 ontop ;
+   end ; { def preds
+   DefObjs
+     Peg anypeg peg ;
+     Disk anydisk disk ;
+   end ; { def objs
+   DefProps
+     P1 moveto ( Disk Peg ) ;
+     P2 ontop ( Disk Peg ) ;
+   end ; { def props
+   DefGroups
+     Cause ( P1 ) ( P2 ) 1 ;
+   end ; { defgroups
+done ; { analog 1
+{
+Analog Board
+   DefPreds
+     moveto 2 ptrans goto1 goto2 goto3 ;
+   end ; { def preds
+   DefObjs
+     Peg1 peg1 peg ;
+     Peg2 peg2 peg ;
+     DiskA diskA disk ;
+   end ; { def objs
+   DefProps
+     P1 moveto ( DiskA Peg1 ) ;
+     P2 moveto ( DiskA Peg2 ) ;
+   end ; { def props
+done ; { analog 1
+{
+Sequence
+   { SemanticNoise 0.1
+   Driver=[ 1 ] { set board to driver
+   Recip=[ 0 ]  { set rule to recip
+   Order=[ R ( 2 1 ) ] {
+   SSL_ON  { force SSL
+   Driver=[ 0 ]
+   Recip=[ 1 ]
+   Order=[ P1 h P2 h ]
+done ;

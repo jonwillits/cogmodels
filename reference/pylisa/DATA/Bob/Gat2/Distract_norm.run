@@ -1,0 +1,44 @@
+Note: Gat 2: second, radically new approach to GAT task
+Note: A and B gone from driver; C in driver
+Note: GAT FTLD Task
+Note: Distractor Condition: Normal subject: Attention  = 1
+Note: Assume that Semantic Distractors share some predicate semantic units with
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Unlimited WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 0.9000
+    Bail Upon Settling = True
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Problem    Recip : Alternatives?    Fire control:random    Phase set: P1
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Problem to Alternatives?:
+  Preds:
+    From RIGHT1 to:
+    From RIGHT2 to:
+  Objs:
+    From C to:
+    From X to:
+
+From Alternatives? to Problem:
+  Preds:
+    From RIGHT1 to:
+    From RIGHT2 to:
+  Objs:
+    From Y to:
+    From D to:
+

@@ -1,0 +1,5208 @@
+{
+ "sym": "DATA/st.john/4.sym",
+ "preset": "Hummel2007",
+ "runs": 5,
+ "firstSeed": 1,
+ "results": [
+  {
+   "run": 1,
+   "seed": 1,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9795,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 4,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9799,
+      "Schema": 0.9798
+     }
+    },
+    {
+     "index": 5,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9796,
+      "Schema": 0.9801
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P4"
+     ],
+     "updateMapping": true,
+     "topDownAt": 357,
+     "firings": {
+      "SP4.1": 3,
+      "SP4.2": 3,
+      "SP4.3": 3
+     },
+     "timesFired": {
+      "SP4.1": 10,
+      "SP4.2": 15,
+      "SP4.3": 15
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target-Joan": 0.9803,
+      "Schema": 0.9806
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P5"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP5.1": 3,
+      "SP5.2": 3
+     },
+     "timesFired": {
+      "SP5.1": 15,
+      "SP5.2": 10
+     },
+     "settleRounds": 24,
+     "mappingQuality": {
+      "Target-Joan": 0.98,
+      "Schema": 0.9803
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P1",
+     "to": "Target-Joan",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.1",
+     "to": "Target-Joan",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS1",
+     "to": "Target-Joan",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BILL",
+     "to": "Target-Joan",
+     "toUnit": "JOAN",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.2",
+     "to": "Target-Joan",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS2",
+     "to": "Target-Joan",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "JEEP",
+     "to": "Target-Joan",
+     "toUnit": "CIVIC",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P2",
+     "to": "Target-Joan",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.1",
+     "to": "Target-Joan",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO1",
+     "to": "Target-Joan",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.2",
+     "to": "Target-Joan",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO2",
+     "to": "Target-Joan",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BEACH",
+     "to": "Target-Joan",
+     "toUnit": "LAX",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P3",
+     "to": "Target-Joan",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.1",
+     "to": "Target-Joan",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT1",
+     "to": "Target-Joan",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9679
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.2",
+     "to": "Target-Joan",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT2",
+     "to": "Target-Joan",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source-Bill",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS1\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source-Bill",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS2\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEEP\"",
+     "to": "Source-Bill",
+     "toUnit": "JEEP",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source-Bill",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO1\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO2\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BEACH\"",
+     "to": "Source-Bill",
+     "toUnit": "BEACH",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source-Bill",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT1\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT2\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "CIVIC"
+      },
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "LAX"
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "JOAN"
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "P3"
+      },
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"HAS1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"HAS2\"",
+       "arg": "\"JEEP\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"GOTO1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"GOTO2\"",
+       "arg": "\"BEACH\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"WANT1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"WANT2\"",
+       "arg": "\"P2\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "\"JEEP\""
+      },
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "\"BEACH\""
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "\"P3\""
+      },
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "HAS11": 1.0,
+      "HAS21": 1.0,
+      "HAS31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "HAS12": 1.0,
+      "HAS22": 1.0,
+      "HAS32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO11": 1.0,
+      "GOTO21": 1.0,
+      "GOTO31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO12": 1.0,
+      "GOTO22": 1.0,
+      "GOTO32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "WANT1": 1.0,
+      "11": 1.0,
+      "WANT21": 1.0,
+      "WANT31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "WANT2": 1.0,
+      "12": 1.0,
+      "WANT22": 1.0,
+      "WANT32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.635,
+      "JOAN1": 0.635,
+      "JOAN2": 0.635,
+      "JOAN3": 0.635,
+      "MALE": 0.368,
+      "BILL1": 0.368,
+      "BILL2": 0.368,
+      "BILL3": 0.368
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"JEEP\"",
+     "semantics": {
+      "ARTIFACT": 0.789,
+      "VEHICLE": 0.789,
+      "CAR": 0.789,
+      "CIVIC": 1.0,
+      "JAPANESE": 0.5,
+      "GOOD": 0.5,
+      "JEEP": 0.578,
+      "AMERICAN": 0.289,
+      "SHIT": 0.289
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BEACH\"",
+     "semantics": {
+      "LOCATION": 0.79,
+      "AIRPORT": 1.0,
+      "COMMERCE": 0.79,
+      "TRANSPORT": 0.5,
+      "FLIGHT": 0.5,
+      "BEACH": 0.579,
+      "RECREATION": 0.29,
+      "OCEAN": 0.29,
+      "SAND": 0.29
+     }
+    }
+   ]
+  },
+  {
+   "run": 2,
+   "seed": 2,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 245,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 250,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9795,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 4,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9799,
+      "Schema": 0.9798
+     }
+    },
+    {
+     "index": 5,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 10,
+      "SP3.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9796,
+      "Schema": 0.9801
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P4"
+     ],
+     "updateMapping": true,
+     "topDownAt": 354,
+     "firings": {
+      "SP4.1": 3,
+      "SP4.2": 3,
+      "SP4.3": 3
+     },
+     "timesFired": {
+      "SP4.1": 10,
+      "SP4.2": 15,
+      "SP4.3": 15
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target-Joan": 0.9803,
+      "Schema": 0.9806
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P5"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP5.1": 3,
+      "SP5.2": 3
+     },
+     "timesFired": {
+      "SP5.1": 15,
+      "SP5.2": 10
+     },
+     "settleRounds": 24,
+     "mappingQuality": {
+      "Target-Joan": 0.98,
+      "Schema": 0.9803
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P1",
+     "to": "Target-Joan",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.1",
+     "to": "Target-Joan",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS1",
+     "to": "Target-Joan",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BILL",
+     "to": "Target-Joan",
+     "toUnit": "JOAN",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.2",
+     "to": "Target-Joan",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS2",
+     "to": "Target-Joan",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "JEEP",
+     "to": "Target-Joan",
+     "toUnit": "CIVIC",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P2",
+     "to": "Target-Joan",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.1",
+     "to": "Target-Joan",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO1",
+     "to": "Target-Joan",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.2",
+     "to": "Target-Joan",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO2",
+     "to": "Target-Joan",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BEACH",
+     "to": "Target-Joan",
+     "toUnit": "LAX",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P3",
+     "to": "Target-Joan",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.1",
+     "to": "Target-Joan",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT1",
+     "to": "Target-Joan",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9679
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.2",
+     "to": "Target-Joan",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT2",
+     "to": "Target-Joan",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source-Bill",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS1\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source-Bill",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS2\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEEP\"",
+     "to": "Source-Bill",
+     "toUnit": "JEEP",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source-Bill",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO2\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BEACH\"",
+     "to": "Source-Bill",
+     "toUnit": "BEACH",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO1\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source-Bill",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT2\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT1\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "LAX"
+      },
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "CIVIC"
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "JOAN"
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "P3"
+      },
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"HAS1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"HAS2\"",
+       "arg": "\"JEEP\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"GOTO2\"",
+       "arg": "\"BEACH\""
+      },
+      {
+       "pred": "\"GOTO1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"WANT2\"",
+       "arg": "\"P2\""
+      },
+      {
+       "pred": "\"WANT1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "\"BEACH\""
+      },
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "\"JEEP\""
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "\"P3\""
+      },
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "HAS11": 1.0,
+      "HAS21": 1.0,
+      "HAS31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "HAS12": 1.0,
+      "HAS22": 1.0,
+      "HAS32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO12": 1.0,
+      "GOTO22": 1.0,
+      "GOTO32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO11": 1.0,
+      "GOTO21": 1.0,
+      "GOTO31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "WANT2": 1.0,
+      "12": 1.0,
+      "WANT22": 1.0,
+      "WANT32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "WANT1": 1.0,
+      "11": 1.0,
+      "WANT21": 1.0,
+      "WANT31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.635,
+      "JOAN1": 0.635,
+      "JOAN2": 0.635,
+      "JOAN3": 0.635,
+      "MALE": 0.368,
+      "BILL1": 0.368,
+      "BILL2": 0.368,
+      "BILL3": 0.368
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"JEEP\"",
+     "semantics": {
+      "ARTIFACT": 0.789,
+      "VEHICLE": 0.789,
+      "CAR": 0.789,
+      "CIVIC": 1.0,
+      "JAPANESE": 0.5,
+      "GOOD": 0.5,
+      "JEEP": 0.578,
+      "AMERICAN": 0.289,
+      "SHIT": 0.289
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BEACH\"",
+     "semantics": {
+      "LOCATION": 0.79,
+      "AIRPORT": 1.0,
+      "COMMERCE": 0.79,
+      "TRANSPORT": 0.5,
+      "FLIGHT": 0.5,
+      "BEACH": 0.579,
+      "RECREATION": 0.29,
+      "OCEAN": 0.29,
+      "SAND": 0.29
+     }
+    }
+   ]
+  },
+  {
+   "run": 3,
+   "seed": 3,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 240,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9795,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 4,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9799,
+      "Schema": 0.9798
+     }
+    },
+    {
+     "index": 5,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9796,
+      "Schema": 0.9801
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P4"
+     ],
+     "updateMapping": true,
+     "topDownAt": 357,
+     "firings": {
+      "SP4.1": 3,
+      "SP4.2": 3,
+      "SP4.3": 3
+     },
+     "timesFired": {
+      "SP4.1": 15,
+      "SP4.2": 15,
+      "SP4.3": 10
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target-Joan": 0.9803,
+      "Schema": 0.9806
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P5"
+     ],
+     "updateMapping": true,
+     "topDownAt": 234,
+     "firings": {
+      "SP5.1": 3,
+      "SP5.2": 3
+     },
+     "timesFired": {
+      "SP5.1": 15,
+      "SP5.2": 10
+     },
+     "settleRounds": 24,
+     "mappingQuality": {
+      "Target-Joan": 0.98,
+      "Schema": 0.9803
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P1",
+     "to": "Target-Joan",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.1",
+     "to": "Target-Joan",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS1",
+     "to": "Target-Joan",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BILL",
+     "to": "Target-Joan",
+     "toUnit": "JOAN",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.2",
+     "to": "Target-Joan",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS2",
+     "to": "Target-Joan",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "JEEP",
+     "to": "Target-Joan",
+     "toUnit": "CIVIC",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P2",
+     "to": "Target-Joan",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.1",
+     "to": "Target-Joan",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO1",
+     "to": "Target-Joan",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.2",
+     "to": "Target-Joan",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO2",
+     "to": "Target-Joan",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BEACH",
+     "to": "Target-Joan",
+     "toUnit": "LAX",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P3",
+     "to": "Target-Joan",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.1",
+     "to": "Target-Joan",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT1",
+     "to": "Target-Joan",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9679
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.2",
+     "to": "Target-Joan",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT2",
+     "to": "Target-Joan",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source-Bill",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS1\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source-Bill",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS2\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEEP\"",
+     "to": "Source-Bill",
+     "toUnit": "JEEP",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source-Bill",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO1\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO2\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BEACH\"",
+     "to": "Source-Bill",
+     "toUnit": "BEACH",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source-Bill",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT1\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT2\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "CIVIC"
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "JOAN"
+      },
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "LAX"
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "P3"
+      },
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"HAS1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"HAS2\"",
+       "arg": "\"JEEP\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"GOTO1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"GOTO2\"",
+       "arg": "\"BEACH\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"WANT1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"WANT2\"",
+       "arg": "\"P2\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "\"JEEP\""
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "\"BEACH\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "\"P3\""
+      },
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "HAS11": 1.0,
+      "HAS21": 1.0,
+      "HAS31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "HAS12": 1.0,
+      "HAS22": 1.0,
+      "HAS32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO11": 1.0,
+      "GOTO21": 1.0,
+      "GOTO31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO12": 1.0,
+      "GOTO22": 1.0,
+      "GOTO32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "WANT1": 1.0,
+      "11": 1.0,
+      "WANT21": 1.0,
+      "WANT31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "WANT2": 1.0,
+      "12": 1.0,
+      "WANT22": 1.0,
+      "WANT32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.635,
+      "JOAN1": 0.635,
+      "JOAN2": 0.635,
+      "JOAN3": 0.635,
+      "MALE": 0.368,
+      "BILL1": 0.368,
+      "BILL2": 0.368,
+      "BILL3": 0.368
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"JEEP\"",
+     "semantics": {
+      "ARTIFACT": 0.789,
+      "VEHICLE": 0.789,
+      "CAR": 0.789,
+      "CIVIC": 1.0,
+      "JAPANESE": 0.5,
+      "GOOD": 0.5,
+      "JEEP": 0.578,
+      "AMERICAN": 0.289,
+      "SHIT": 0.289
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BEACH\"",
+     "semantics": {
+      "LOCATION": 0.79,
+      "AIRPORT": 1.0,
+      "COMMERCE": 0.79,
+      "TRANSPORT": 0.5,
+      "FLIGHT": 0.5,
+      "BEACH": 0.579,
+      "RECREATION": 0.29,
+      "OCEAN": 0.29,
+      "SAND": 0.29
+     }
+    }
+   ]
+  },
+  {
+   "run": 4,
+   "seed": 4,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 240,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 245,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 10,
+      "SP3.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9795,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 4,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9799,
+      "Schema": 0.9798
+     }
+    },
+    {
+     "index": 5,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9796,
+      "Schema": 0.9801
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P4"
+     ],
+     "updateMapping": true,
+     "topDownAt": 356,
+     "firings": {
+      "SP4.1": 3,
+      "SP4.2": 3,
+      "SP4.3": 3
+     },
+     "timesFired": {
+      "SP4.1": 10,
+      "SP4.2": 15,
+      "SP4.3": 15
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target-Joan": 0.9803,
+      "Schema": 0.9806
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P5"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP5.1": 3,
+      "SP5.2": 3
+     },
+     "timesFired": {
+      "SP5.1": 15,
+      "SP5.2": 10
+     },
+     "settleRounds": 24,
+     "mappingQuality": {
+      "Target-Joan": 0.98,
+      "Schema": 0.9803
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P1",
+     "to": "Target-Joan",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.1",
+     "to": "Target-Joan",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS1",
+     "to": "Target-Joan",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BILL",
+     "to": "Target-Joan",
+     "toUnit": "JOAN",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.2",
+     "to": "Target-Joan",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS2",
+     "to": "Target-Joan",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "JEEP",
+     "to": "Target-Joan",
+     "toUnit": "CIVIC",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P2",
+     "to": "Target-Joan",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.1",
+     "to": "Target-Joan",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO1",
+     "to": "Target-Joan",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.2",
+     "to": "Target-Joan",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO2",
+     "to": "Target-Joan",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BEACH",
+     "to": "Target-Joan",
+     "toUnit": "LAX",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P3",
+     "to": "Target-Joan",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.1",
+     "to": "Target-Joan",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT1",
+     "to": "Target-Joan",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9679
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.2",
+     "to": "Target-Joan",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT2",
+     "to": "Target-Joan",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source-Bill",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS2\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEEP\"",
+     "to": "Source-Bill",
+     "toUnit": "JEEP",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS1\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source-Bill",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source-Bill",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO2\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BEACH\"",
+     "to": "Source-Bill",
+     "toUnit": "BEACH",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO1\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source-Bill",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT1\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT2\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "CIVIC"
+      },
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "LAX"
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "JOAN"
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "P3"
+      },
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"HAS2\"",
+       "arg": "\"JEEP\""
+      },
+      {
+       "pred": "\"HAS1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"GOTO2\"",
+       "arg": "\"BEACH\""
+      },
+      {
+       "pred": "\"GOTO1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"WANT1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"WANT2\"",
+       "arg": "\"P2\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "\"JEEP\""
+      },
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "\"BEACH\""
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "\"P3\""
+      },
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "HAS12": 1.0,
+      "HAS22": 1.0,
+      "HAS32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "HAS11": 1.0,
+      "HAS21": 1.0,
+      "HAS31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO12": 1.0,
+      "GOTO22": 1.0,
+      "GOTO32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO11": 1.0,
+      "GOTO21": 1.0,
+      "GOTO31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "WANT1": 1.0,
+      "11": 1.0,
+      "WANT21": 1.0,
+      "WANT31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "WANT2": 1.0,
+      "12": 1.0,
+      "WANT22": 1.0,
+      "WANT32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"JEEP\"",
+     "semantics": {
+      "ARTIFACT": 0.789,
+      "VEHICLE": 0.789,
+      "CAR": 0.789,
+      "CIVIC": 1.0,
+      "JAPANESE": 0.5,
+      "GOOD": 0.5,
+      "JEEP": 0.578,
+      "AMERICAN": 0.289,
+      "SHIT": 0.289
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.635,
+      "JOAN1": 0.635,
+      "JOAN2": 0.635,
+      "JOAN3": 0.635,
+      "MALE": 0.368,
+      "BILL1": 0.368,
+      "BILL2": 0.368,
+      "BILL3": 0.368
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BEACH\"",
+     "semantics": {
+      "LOCATION": 0.79,
+      "AIRPORT": 1.0,
+      "COMMERCE": 0.79,
+      "TRANSPORT": 0.5,
+      "FLIGHT": 0.5,
+      "BEACH": 0.579,
+      "RECREATION": 0.29,
+      "OCEAN": 0.29,
+      "SAND": 0.29
+     }
+    }
+   ]
+  },
+  {
+   "run": 5,
+   "seed": 5,
+   "records": [
+    {
+     "index": 0,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 15,
+      "SP1.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 1,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 233,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 15,
+      "SP2.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 2,
+     "driver": "Target-Joan",
+     "recips": [
+      "Source-Bill"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 235,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 15,
+      "SP3.2": 10
+     },
+     "settleRounds": 36,
+     "mappingQuality": null
+    },
+    {
+     "index": 3,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P1"
+     ],
+     "updateMapping": true,
+     "topDownAt": 238,
+     "firings": {
+      "SP1.1": 3,
+      "SP1.2": 3
+     },
+     "timesFired": {
+      "SP1.1": 10,
+      "SP1.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9795,
+      "Schema": 0.9793
+     }
+    },
+    {
+     "index": 4,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P2"
+     ],
+     "updateMapping": true,
+     "topDownAt": 236,
+     "firings": {
+      "SP2.1": 3,
+      "SP2.2": 3
+     },
+     "timesFired": {
+      "SP2.1": 10,
+      "SP2.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9799,
+      "Schema": 0.9798
+     }
+    },
+    {
+     "index": 5,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P3"
+     ],
+     "updateMapping": true,
+     "topDownAt": 237,
+     "firings": {
+      "SP3.1": 3,
+      "SP3.2": 3
+     },
+     "timesFired": {
+      "SP3.1": 10,
+      "SP3.2": 15
+     },
+     "settleRounds": 36,
+     "mappingQuality": {
+      "Target-Joan": 0.9796,
+      "Schema": 0.9801
+     }
+    },
+    {
+     "index": 6,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P4"
+     ],
+     "updateMapping": true,
+     "topDownAt": 356,
+     "firings": {
+      "SP4.1": 3,
+      "SP4.2": 3,
+      "SP4.3": 3
+     },
+     "timesFired": {
+      "SP4.1": 15,
+      "SP4.2": 15,
+      "SP4.3": 10
+     },
+     "settleRounds": 19,
+     "mappingQuality": {
+      "Target-Joan": 0.9803,
+      "Schema": 0.9806
+     }
+    },
+    {
+     "index": 7,
+     "driver": "Source-Bill",
+     "recips": [
+      "Target-Joan",
+      "Schema"
+     ],
+     "props": [
+      "P5"
+     ],
+     "updateMapping": true,
+     "topDownAt": 241,
+     "firings": {
+      "SP5.1": 3,
+      "SP5.2": 3
+     },
+     "timesFired": {
+      "SP5.1": 10,
+      "SP5.2": 15
+     },
+     "settleRounds": 24,
+     "mappingQuality": {
+      "Target-Joan": 0.98,
+      "Schema": 0.9803
+     }
+    }
+   ],
+   "mappings": [
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P1",
+     "to": "Target-Joan",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.1",
+     "to": "Target-Joan",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS1",
+     "to": "Target-Joan",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BILL",
+     "to": "Target-Joan",
+     "toUnit": "JOAN",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP1.2",
+     "to": "Target-Joan",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "HAS2",
+     "to": "Target-Joan",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "JEEP",
+     "to": "Target-Joan",
+     "toUnit": "CIVIC",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P2",
+     "to": "Target-Joan",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.1",
+     "to": "Target-Joan",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO1",
+     "to": "Target-Joan",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP2.2",
+     "to": "Target-Joan",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "GOTO2",
+     "to": "Target-Joan",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "BEACH",
+     "to": "Target-Joan",
+     "toUnit": "LAX",
+     "type": "Obj",
+     "weight": 0.9676
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "P3",
+     "to": "Target-Joan",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.1",
+     "to": "Target-Joan",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT1",
+     "to": "Target-Joan",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9679
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "SP3.2",
+     "to": "Target-Joan",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Source-Bill",
+     "fromUnit": "WANT2",
+     "to": "Target-Joan",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9677
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P1\"",
+     "to": "Source-Bill",
+     "toUnit": "P1",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS2\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"JEEP\"",
+     "to": "Source-Bill",
+     "toUnit": "JEEP",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP1.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP1.1",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"HAS1\"",
+     "to": "Source-Bill",
+     "toUnit": "HAS1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BILL\"",
+     "to": "Source-Bill",
+     "toUnit": "BILL",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.2",
+     "type": "SP",
+     "weight": 0.9933
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P2\"",
+     "to": "Source-Bill",
+     "toUnit": "P2",
+     "type": "P",
+     "weight": 0.9823
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO2\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"BEACH\"",
+     "to": "Source-Bill",
+     "toUnit": "BEACH",
+     "type": "Obj",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP2.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP2.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"GOTO1\"",
+     "to": "Source-Bill",
+     "toUnit": "GOTO1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P3\"",
+     "to": "Source-Bill",
+     "toUnit": "P3",
+     "type": "P",
+     "weight": 0.9818
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT2\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT2",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP3.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP3.1",
+     "type": "SP",
+     "weight": 0.9903
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"WANT1\"",
+     "to": "Source-Bill",
+     "toUnit": "WANT1",
+     "type": "Pred",
+     "weight": 0.9695
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P4\"",
+     "to": "Source-Bill",
+     "toUnit": "P4",
+     "type": "P",
+     "weight": 0.9817
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO2\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO2",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO1\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO1",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP4.3\"",
+     "to": "Source-Bill",
+     "toUnit": "SP4.3",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"DRIVETO3\"",
+     "to": "Source-Bill",
+     "toUnit": "DRIVETO3",
+     "type": "Pred",
+     "weight": 0.968
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.2\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.2",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"P5\"",
+     "to": "Source-Bill",
+     "toUnit": "P5",
+     "type": "P",
+     "weight": 0.9904
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE2\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE2",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"SP5.1\"",
+     "to": "Source-Bill",
+     "toUnit": "SP5.1",
+     "type": "SP",
+     "weight": 0.9921
+    },
+    {
+     "from": "Target-Joan",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    },
+    {
+     "from": "Schema",
+     "fromUnit": "\"CAUSE1\"",
+     "to": "Source-Bill",
+     "toUnit": "CAUSE1",
+     "type": "Pred",
+     "weight": 0.9693
+    }
+   ],
+   "inferred": [
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "CIVIC"
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "JOAN"
+      },
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "LAX"
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      },
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "P3"
+      }
+     ]
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Target-Joan",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P1\"",
+     "sps": [
+      {
+       "pred": "\"HAS2\"",
+       "arg": "\"JEEP\""
+      },
+      {
+       "pred": "\"HAS1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P2\"",
+     "sps": [
+      {
+       "pred": "\"GOTO2\"",
+       "arg": "\"BEACH\""
+      },
+      {
+       "pred": "\"GOTO1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P3\"",
+     "sps": [
+      {
+       "pred": "\"WANT2\"",
+       "arg": "\"P2\""
+      },
+      {
+       "pred": "\"WANT1\"",
+       "arg": "\"BILL\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P4\"",
+     "sps": [
+      {
+       "pred": "\"DRIVETO2\"",
+       "arg": "\"JEEP\""
+      },
+      {
+       "pred": "\"DRIVETO1\"",
+       "arg": "\"BILL\""
+      },
+      {
+       "pred": "\"DRIVETO3\"",
+       "arg": "\"BEACH\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "P",
+     "name": "\"P5\"",
+     "sps": [
+      {
+       "pred": "\"CAUSE2\"",
+       "arg": "\"P4\""
+      },
+      {
+       "pred": "\"CAUSE1\"",
+       "arg": "\"P3\""
+      }
+     ]
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "HAS12": 1.0,
+      "HAS22": 1.0,
+      "HAS32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"HAS1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "HAS11": 1.0,
+      "HAS21": 1.0,
+      "HAS31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO12": 1.0,
+      "GOTO22": 1.0,
+      "GOTO32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"GOTO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO11": 1.0,
+      "GOTO21": 1.0,
+      "GOTO31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT2\"",
+     "semantics": {
+      "STATE2": 1.0,
+      "WANT2": 1.0,
+      "12": 1.0,
+      "WANT22": 1.0,
+      "WANT32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"WANT1\"",
+     "semantics": {
+      "STATE1": 1.0,
+      "WANT1": 1.0,
+      "11": 1.0,
+      "WANT21": 1.0,
+      "WANT31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO2\"",
+     "semantics": {
+      "PTRANS2": 1.0,
+      "GOTO2": 1.0,
+      "DRIVE2": 1.0,
+      "VEHICLE2": 1.0,
+      "DRIVE22": 1.0,
+      "DRIVE32": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO1\"",
+     "semantics": {
+      "PTRANS1": 1.0,
+      "GOTO1": 1.0,
+      "DRIVE1": 1.0,
+      "VEHICLE1": 1.0,
+      "DRIVE21": 1.0,
+      "DRIVE31": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"DRIVETO3\"",
+     "semantics": {
+      "PTRANS3": 1.0,
+      "GOTO3": 1.0,
+      "DRIVE3": 1.0,
+      "VEHICLE3": 1.0,
+      "DRIVE23": 1.0,
+      "DRIVE33": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE2\"",
+     "semantics": {
+      "CAUSE2": 1.0,
+      "CAUSE22": 1.0,
+      "CAUSE32": 1.0,
+      "CAUSE42": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Pred",
+     "name": "\"CAUSE1\"",
+     "semantics": {
+      "CAUSE1": 1.0,
+      "CAUSE21": 1.0,
+      "CAUSE31": 1.0,
+      "CAUSE41": 1.0
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"JEEP\"",
+     "semantics": {
+      "ARTIFACT": 0.789,
+      "VEHICLE": 0.789,
+      "CAR": 0.789,
+      "CIVIC": 1.0,
+      "JAPANESE": 0.5,
+      "GOOD": 0.5,
+      "JEEP": 0.578,
+      "AMERICAN": 0.289,
+      "SHIT": 0.289
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BILL\"",
+     "semantics": {
+      "HUMAN": 1.0,
+      "ADULT": 1.0,
+      "FEMALE": 0.635,
+      "JOAN1": 0.635,
+      "JOAN2": 0.635,
+      "JOAN3": 0.635,
+      "MALE": 0.368,
+      "BILL1": 0.368,
+      "BILL2": 0.368,
+      "BILL3": 0.368
+     }
+    },
+    {
+     "analog": "Schema",
+     "type": "Obj",
+     "name": "\"BEACH\"",
+     "semantics": {
+      "LOCATION": 0.79,
+      "AIRPORT": 1.0,
+      "COMMERCE": 0.79,
+      "TRANSPORT": 0.5,
+      "FLIGHT": 0.5,
+      "BEACH": 0.579,
+      "RECREATION": 0.29,
+      "OCEAN": 0.29,
+      "SAND": 0.29
+     }
+    }
+   ]
+  }
+ ]
+}

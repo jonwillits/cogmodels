@@ -1,0 +1,61 @@
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = True
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Amy&Bill    Recip : Abe&Beth    Fire control:props    Phase set: P1 P2
+Seq. 1    Driver:Amy&Bill    Recip : Abe&Beth    Fire control:props    Phase set: P1
+Seq. 2    Driver:Amy&Bill    Recip : Abe&Beth    Fire control:props    Phase set: P2
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Amy&Bill to Abe&Beth:
+  Groups:
+  Props:
+    From P1 to:    P2 = 1.000
+    From P2 to:    P1 = 1.000
+  SPs:
+    From SP1.1 to:    SP2.1 = 1.000
+    From SP1.2 to:    SP2.2 = 1.000
+    From SP2.1 to:    SP1.1 = 1.000
+    From SP2.2 to:    SP1.2 = 1.000
+  Preds:
+    From LOVES1 to:    LOVES1 = 0.967
+    From LOVES2 to:    LOVES2 = 0.967
+  Objs:
+    From AMY to:    CHAD = 0.889
+    From BILL to:    ABE = 0.967
+    From CAT to:    BETH = 0.967
+
+From Abe&Beth to Amy&Bill:
+  Groups:
+  Props:
+    From P1 to:    P2 = 1.000
+    From P2 to:    P1 = 1.000
+  SPs:
+    From SP1.1 to:    SP2.1 = 1.000
+    From SP1.2 to:    SP2.2 = 1.000
+    From SP2.1 to:    SP1.1 = 1.000
+    From SP2.2 to:    SP1.2 = 1.000
+  Preds:
+    From LOVES1 to:    LOVES1 = 0.967
+    From LOVES2 to:    LOVES2 = 0.967
+  Objs:
+    From ABE to:    BILL = 0.967
+    From BETH to:    CAT = 0.967
+    From CHAD to:    AMY = 0.889
+

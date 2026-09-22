@@ -1,0 +1,161 @@
+Note: Second attempt to illustrate how (child) LISA can run mental models
+Note: This time, LISA must figure out whether the table supports the glass
+Note: 2b made from 2 by eliminating explicit cause statements
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Glass    Recip : NaivePhysics    Fire control:props    Phase set: P1
+Seq. 1    Driver:NaivePhysics    Recip : Glass    Fire control:groups    Phase set: P5
+Seq. 2    Driver:NaivePhysics    Recip : Glass    Fire control:groups    Phase set: P1
+Seq. 3    Driver:NaivePhysics    Recip : Glass    Fire control:groups    Phase set: P5
+Seq. 4    Driver:NaivePhysics    Recip : Glass    Fire control:groups    Phase set: P3
+Seq. 5    Driver:NaivePhysics    Recip : Glass    Fire control:groups    Phase set: P2
+Seq. 6    Driver:NaivePhysics    Recip : Glass    Fire control:groups    Phase set: P3
+Seq. 7    Driver:NaivePhysics    Recip : Glass    Fire control:groups    Phase set: P2
+Seq. 8    Driver:NaivePhysics    Recip : Glass    Fire control:groups    Phase set: P1
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From NaivePhysics to Glass:
+  Groups:
+    From G1 to:    "G1" = 0.969
+    From G2 to:    "G2" = 0.969
+    From G3 to:    "G3" = 0.879
+    From G4 to:
+    From G5 to:
+    From G6 to:
+    From G7 to:    "G7" = 0.969
+    From G8 to:    "G8" = 0.970
+    From G9 to:    "G9" = 0.875
+    From G10 to:
+    From G11 to:
+    From G12 to:
+  Props:
+    From P1 to:    "P1" = 0.992
+    From P2 to:    "P2" = 0.987
+    From P3 to:    "P3" = 0.988
+    From P4 to:
+    From P5 to:    P1 = 0.992
+    From P6 to:
+  SPs:
+    From SP1.1 to:    "SP1.1" = 0.993
+    From SP1.2 to:    "SP1.2" = 0.990
+    From SP2.1 to:    "SP2.1" = 0.992
+    From SP3.1 to:    "SP3.1" = 0.990
+    From SP4.1 to:
+    From SP5.1 to:    SP1.1 = 0.993
+    From SP5.2 to:    SP1.2 = 0.993
+  Preds:
+    From SUPPORT1 to:    "SUPPORT1" = 0.970
+    From SUPPORT2 to:    "SUPPORT2" = 0.879
+    From FALL1 to:    "FALL1" = 0.970
+    From UNSUPPORTED1 to:
+    From NOT1 to:    "NOT1" = 0.969
+    From UNDER1 to:    UNDER1 = 0.970
+    From UNDER2 to:    UNDER2 = 0.970
+    From BESIDE1 to:
+    From BESIDE2 to:
+  Objs:
+    From SUPPORTER to:    TABLE = 0.970
+    From SUPPORTED to:    GLASS = 0.969
+
+From Glass to NaivePhysics:
+  Groups:
+    From "G8" to:    G8 = 0.970
+    From "G9" to:    G9 = 0.875
+    From "G7" to:    G7 = 0.969
+    From "G2" to:    G2 = 0.969
+    From "G3" to:    G3 = 0.879
+    From "G1" to:    G1 = 0.969
+  Props:
+    From P1 to:    P5 = 0.992
+    From "P1" to:    P1 = 0.992
+    From "P3" to:    P3 = 0.988
+    From "P2" to:    P2 = 0.987
+  SPs:
+    From SP1.1 to:    SP5.1 = 0.993
+    From SP1.2 to:    SP5.2 = 0.993
+    From "SP1.1" to:    SP1.1 = 0.993
+    From "SP1.2" to:    SP1.2 = 0.990
+    From "SP3.1" to:    SP3.1 = 0.990
+    From "SP2.1" to:    SP2.1 = 0.992
+  Preds:
+    From UNDER1 to:    UNDER1 = 0.970
+    From UNDER2 to:    UNDER2 = 0.970
+    From "SUPPORT1" to:    SUPPORT1 = 0.970
+    From "NOT1" to:    NOT1 = 0.969
+    From "FALL1" to:    FALL1 = 0.970
+    From "SUPPORT2" to:    SUPPORT2 = 0.879
+  Objs:
+    From GLASS to:    SUPPORTED = 0.969
+    From TABLE to:    SUPPORTER = 0.970
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+* * * * * Analog NaivePhysics * * * * *
+
+Groups:
+
+Props:
+
+Preds:
+
+Objs:
+
+* * * * * Analog Glass * * * * *
+
+Groups:
+"G8":  "P1" EFFECT (0.902) 
+"G9":  "G8" "G7" CAUSEEFFECT (0.869) 
+"G7":  P1 CAUSE (0.902) 
+"G2":  "P3" "P2" EFFECT (0.902) 
+"G3":  "G2" "G1" CAUSEEFFECT (0.869) 
+"G1":  "P1" CAUSE (0.902) 
+
+Props:
+"P1":  [ "SUPPORT1" + TABLE ] [ "SUPPORT1" + GLASS ] 
+"P3":  [ "NOT1" + "P2" ] 
+"P2":  [ "FALL1" + GLASS ] 
+
+Preds:
+"SUPPORT1":
+      SUPPORT2(0.730)
+      HOLD2(0.730)
+
+"NOT1":
+   NEGATE1(1.000)
+   NOT1(1.000)
+   FALSE1(1.000)
+
+"FALL1":
+   FALL1(1.000)
+   DESCEND1(1.000)
+   GRAVITY1(1.000)
+   BREAK1(1.000)
+
+"SUPPORT2":
+   SUPPORT2(1.000)
+   HOLD2(1.000)
+
+
+Objs:

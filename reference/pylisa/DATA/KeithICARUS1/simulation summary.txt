@@ -1,0 +1,28 @@
+One run of each of Keith's four analogies with CompteSimilarity turned on.
+
+The goal is to see whether we can get Keith's intuited pattern of effects using LISA's analog similarity 
+routines as a basis for deciding whether the analogy is good or not.
+
+To do so: Look at the analog similarities computed in an unbiased way (with role and filler similarity both
+contributing to analog similarity) as compared to role-biased similarity, in which role but not filler
+similarity contributes to analog similarity.
+
+Keith's analogies:
+
+(1) blizzard : snowflake :: army : soldier   (cross-domain, slow "true")
+(2) blizzard : snowflake :: monsoon : raindrop (within-domain, fast "true")
+(3) blizzard : snowflake :: tornado : cloud (false)
+(4) blizzard : snowflake :: truck : vehicle (far false)
+
+Analogy     Unbiased Similarity     Role-biased Similarity      Difference (biased - unbiased)
+(1)             0.558                   0.714                       0.156
+(2)             1.220                   1.260                       0.040
+(3)             0.610                   0.637                       0.027
+(4)             0.411                   0.515                       -0.104
+
+Results are not very promising so far... nothing obvious leaping out Except that the rank-ordering of the role-biased
+similarities follows the right ordinal pattern.  We'd just need to assume a threshold somewhere between 0.637 and 0.714.
+
+Perhaps the role similarities in the non-analogy case need to be lower.  Also, perhaps I need to be looking, in the role-biased
+similarity case, at the similarities of the roles *alone* (the biased results above took object similarity out of the 
+equation but left SP and P similarity in, which basically rewards a good structura mapping even if roles don't map).

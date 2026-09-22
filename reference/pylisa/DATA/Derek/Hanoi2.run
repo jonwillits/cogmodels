@@ -1,0 +1,107 @@
+Run of LISA Version 1.00; last modified 8/27/07
+
+Note: Derek/Hanoi1.sym {
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Board    Recip : RuleLHS    Fire control:random    Phase set: P2
+Seq. 1    Driver:RuleLHS    Recip : Board    Fire control:props    Phase set: P1
+Seq. 2    Driver:RuleLHS    Recip : Board    Fire control:props    Phase set: P2
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From RuleLHS to Board:
+  Groups:
+    From Cause1 to:    "Cause1" = 0.970
+    From Effect1 to:    "Effect1" = 0.969
+    From CE-1 to:    "CE-1" = 0.885
+  Props:
+    From P1 to:    P2 = 0.992
+    From P2 to:    "P2" = 0.992
+  SPs:
+    From SP1.1 to:    SP2.1 = 0.993
+    From SP1.2 to:    SP2.2 = 0.993
+    From SP2.1 to:    "SP2.1" = 0.993
+    From SP2.2 to:    "SP2.2" = 0.990
+  Preds:
+    From MOVETO1 to:    MOVETO1 = 0.970
+    From MOVETO2 to:    MOVETO2 = 0.970
+    From ONTOP1 to:    "ONTOP1" = 0.970
+    From ONTOP2 to:    "ONTOP2" = 0.969
+  Objs:
+    From PEG to:    PEG2 = 0.970    PEG1 = 0.098
+    From DISK to:    DISKA = 0.970
+
+From Board to RuleLHS:
+  Groups:
+    From "Cause1" to:    Cause1 = 0.970
+    From "CE-1" to:    CE-1 = 0.885
+    From "Effect1" to:    Effect1 = 0.969
+  Props:
+    From P1 to:
+    From P2 to:    P1 = 0.992
+    From "P2" to:    P2 = 0.992
+  SPs:
+    From SP1.1 to:
+    From SP1.2 to:
+    From SP2.1 to:    SP1.1 = 0.993
+    From SP2.2 to:    SP1.2 = 0.993
+    From "SP2.2" to:    SP2.2 = 0.990
+    From "SP2.1" to:    SP2.1 = 0.993
+  Preds:
+    From MOVETO1 to:    MOVETO1 = 0.970
+    From MOVETO2 to:    MOVETO2 = 0.970
+    From "ONTOP2" to:    ONTOP2 = 0.969
+    From "ONTOP1" to:    ONTOP1 = 0.970
+  Objs:
+    From PEG1 to:    PEG = 0.098
+    From PEG2 to:    PEG = 0.970
+    From DISKA to:    DISK = 0.970
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+* * * * * Analog Board * * * * *
+
+Groups:
+"Cause1":  P2 CAUSE (0.902) 
+"CE-1":  "Cause1" "Effect1" CAUSE-EFFECT (0.869) CS_1.0 (0.869) 
+"Effect1":  "P2" EFFECT (0.902) 
+
+Props:
+"P2":  [ "ONTOP2" + PEG2 ] [ "ONTOP1" + DISKA ] 
+
+Preds:
+"ONTOP2":
+   STATE2(1.000)
+   LOCATION2(1.000)
+   ON12(1.000)
+   ONTOP2(1.000)
+
+"ONTOP1":
+   STATE1(1.000)
+   LOCATION1(1.000)
+   ON11(1.000)
+   ONTOP1(1.000)
+
+
+Objs:

@@ -1,0 +1,66 @@
+Run of LISA Version 1.00; last modified 10/18/11
+
+Note: FirstTry.sym: First attempt to use LISA to simulate moral reasoning
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Fumes    Recip : Trolly    Fire control:props    Phase set: P1
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Trolly to Fumes:
+  Groups:
+    From Cause1 to:
+    From CE-1 to:
+    From Cause2 to:
+    From CE-2 to:
+    From Cause3 to:
+    From CE-3 to:
+    From Cause4 to:
+    From CE-4 to:
+    From Cause5 to:
+    From CE-5 to:
+  Props:
+    From P1 to:
+  SPs:
+    From SP1.1 to:
+    From SP1.2 to:
+  Preds:
+    From TRAVEL1 to:
+    From TRAVEL2 to:
+  Objs:
+    From TROLLY to:
+    From TRACKS to:
+
+From Fumes to Trolly:
+  Groups:
+    From Cause1 to:
+    From CE-1 to:
+  Props:
+    From P1 to:
+  SPs:
+    From SP1.1 to:
+    From SP1.2 to:
+  Preds:
+    From TRAVEL1 to:
+    From TRAVEL2 to:
+  Objs:
+    From FUMES to:
+    From VENTS to:
+

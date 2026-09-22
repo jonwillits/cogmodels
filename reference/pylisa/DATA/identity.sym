@@ -1,0 +1,39 @@
+Note: identity.sym
+Note: Marcus's identity function in LISA
+
+Analog One { a representation of Modus Ponens, highly variablized for generic use; i.e., version as instantiated in expert
+  DefPreds
+	in [ input variable ] ;
+	out [ output variable ] ;
+  end
+  DefObjs
+	One identity numeral one single ;
+  end
+  DefProps
+	P1 in ( One ) ;
+	P2 out ( One ) ;
+  end
+done { LTM: Analog 0
+
+Analog Flower { the other banker: Analog 1
+  DefPreds
+	in [ input variable ] ;
+  end
+  DefObjs
+        Flower how pretty ;
+  end
+  DefProps
+    	P1 in ( Flower ) ;
+  end
+done { 
+
+Sequence { 
+  	Driver=[ 1 ] 
+	Recip=[ 0 ] 
+	Order=[ P1 h ]
+	SSL_ON
+	Driver=[ 0 ]
+	Recip=[ 1 ]
+  	Order=[ P1 h P2 h ]
+done.
+    

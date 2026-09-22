@@ -1,0 +1,70 @@
+Run of LISA Version 1.00; last modified 2/21/08
+
+Note: Keith's ICARUS simulations from his email of 11/22/10
+Note: (1) blizzard : snowflake :: army : soldier   (cross-domain, slow "true")
+Note: (2) blizzard : snowflake :: monsoon : raindrop (within-domain, fast "true")
+Note: (3) blizzard : snowflake :: tornado : cloud (false)
+Note: Approach is to use LISA's similarity engine to do this: Can analog MIP similarity serve as an index of analogy validity?
+Note: This sym file implements analogy 1 above
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:snow    Recip : rain    Fire control:props    Phase set: P1
+
+Similarities as of step 0:
+Similarity of snow to rain:
+MOP Sim   = 0.442 
+MIP Sim   = 0.778 
+Total Sim = 1.220 
+Similarity of rain to snow:
+MOP Sim   = 0.442 
+MIP Sim   = 0.778 
+Total Sim = 1.220 
+
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From snow to rain:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.993
+    From SP1.2 to:    SP1.2 = 0.993
+  Preds:
+    From PART_OF1 to:    PART_OF1 = 0.968
+    From PART_OF2 to:    PART_OF2 = 0.968
+  Objs:
+    From SNOWFLAKE to:    RAINDROP = 0.968
+    From BLIZZARD to:    MONSOON = 0.968
+
+From rain to snow:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.993
+    From SP1.2 to:    SP1.2 = 0.993
+  Preds:
+    From PART_OF1 to:    PART_OF1 = 0.968
+    From PART_OF2 to:    PART_OF2 = 0.968
+  Objs:
+    From RAINDROP to:    SNOWFLAKE = 0.968
+    From MONSOON to:    BLIZZARD = 0.968
+

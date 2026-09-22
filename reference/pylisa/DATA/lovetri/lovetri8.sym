@@ -1,0 +1,65 @@
+Note: LoveTri8.sym
+Note: This version uses hierarchical group-based fire control during SSL
+Note: Whole thing: Inference schema induction, LISA-guided initiation fo SSL
+Analog Amy&Bill
+  Defpreds
+    Loves 2 emotion positive strong loves ;
+    Jealous 2 emotion negative strong jealous ;
+  end; { def preds
+  Defobjs
+     Amy human adult female amy ;
+     Bill human adult male bill ;
+     Cat  human adult female cat ;
+  end; { def objs
+  DefProps
+     P1 Loves ( Amy Bill ) ; { NOTE: New prop syntax! 
+     P2 Loves ( Bill Cat ) ; {       Pred on the OUTSIDE of the parens!
+     P3 Jealous ( Amy Cat ) ;
+  end ; { def props
+  DefGroups
+    G1
+        Props: P1 P2 %
+        Semantics: cause %
+        %% { ends the group def of G1
+    G2
+        Props: P3 %
+        Semantics: effect %
+        %% { ends def of G2
+    G3
+        Groups: G1 G2 %
+        Semantics: cause-relation %
+        %%
+  end { def groups
+done ; { analog 0
+Analog Abe&Beth
+  Defpreds
+    Loves 2 emotion positive strong loves ;
+  end ; { def preds
+  Defobjs
+     Abe human adult male abe ;
+     Beth human adult female beth ;
+     Chad  human adult male chad ;
+  end ; { def objs
+  DefProps
+     P1 Loves ( Abe Beth ) ;
+     P2 Loves ( Beth Chad ) ;
+  end ; { defprops
+  DefGroups
+    G1
+        Props: P1 P2 %
+        Semantics: dummy group %
+        %% { ends the group def of G1
+  end { def groups
+done ; { analog 1
+Analog Schema
+done ; { schema
+Sequence
+  Driver=[ 1 ]
+  Recip=[ 0 ]
+  Order=[ P1 P2 h P1 h P2 h P1 h P2 h ]
+  { volley and let LISA initiate ssl
+  Driver=[ 0 ]
+  Recip=[ 1 2 ]
+  SSL_OK  { LISA initiates ssl
+  Order=[ G3 ( 5 1 ) ] % hierarchical group-based control: G3 has no props of its own!
+Done. { whole sym file

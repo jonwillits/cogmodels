@@ -1,0 +1,55 @@
+Note: Lovetri3.sym the Very easy version of lovetri: no x-mapping and sex helps
+Note: This is an attempt to make a REAL sym file for MatLab LISA
+Analog Amy&Bill
+  Defpreds
+    Loves 2 emotion positive strong loves bloves cloves dloves ;
+  end; { def preds
+  Defobjs
+     Alex human adult male alex ;
+     Betty human adult female betty ;
+     Chuck  human adult male chuck ;
+  end; { def objs
+  DefProps
+     P1 Loves ( Alex Betty ) ; { NOTE: New prop syntax! 
+     P2 Loves ( Betty Chuck ) ; {       Pred on the OUTSIDE of the parens!
+  end ; { def props
+  DefGroups
+    G1
+        Props: P1 P2 %
+        Semantics: cause %
+        %% { ends the group def of G1
+{    G2
+{        Props: P3 %
+{        Semantics: effect %
+{        %% { ends def of G2
+{    G3
+{        Groups: G1 G2 %
+{        Semantics: cause-relation %
+{        %%
+  end { def groups
+done ; { analog 1
+Analog Abe&Beth
+  Defpreds
+    Loves 2 emotion positive strong loves ;
+  end ; { def preds
+  Defobjs
+     Abe human adult male abe ;
+     Beth human adult female beth ;
+     Chad  human adult male chad ;
+  end ; { def objs
+  DefProps
+     P1 Loves ( Abe Beth ) ;
+     P2 Loves ( Beth Chad ) ;
+  end ; { defprops
+  DefGroups
+    G1
+        Props: P1 P2 %
+        Semantics: dummy group %
+        %% { ends the group def of G1
+  end { def groups
+done ; { analog 2
+Sequence
+  Driver=[ 1 ]
+  Recip=[ 0 ]
+  Order=[ P1 h P2 h ]
+Done. { whole sym file

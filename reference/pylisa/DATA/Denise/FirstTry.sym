@@ -1,0 +1,107 @@
+Note: FirstTry.sym: First attempt to use LISA to simulate moral reasoning
+
+Analog Trolly
+    DefPreds
+        better 2 preferred better comparative superior ;
+        travel 2 motion move reavel ;
+        runaway 1 motion out_of_control rapid ;
+        hit 2 motion contact hit ;
+        divert 2 motion change delta divert ;
+        push 2 action push motion forward -inaction ;
+        do_nothing 1 action -push -motion -forward inaction ;
+        kill 2 cause_die kill -save bad -good ;
+        save 2 save -kill -cause_die good -bad ;
+        cause 2 cause ;
+    end ;
+    DefObjs
+        trolly vehicle large heavy trolly ;
+        tracks roadway transit metal rails tracks ;
+        switch device electric control ;
+        small_group people workmen few small -many -large ;
+        large_group people workmen many large -few -small ;
+        you person first_person actor you ;
+    end ;
+    DefProps
+        P1 travel ( trolly tracks ) ;
+        P2 runaway ( trolly ) ;
+        P3 hit ( trolly large_group ) ;
+        P4 do_nothing ( you ) ;
+        P5 kill ( trolly large_group ) ;
+        P6 save ( you small_group ) ;
+        P7 push ( you switch ) ;
+        P8 divert ( switch trolly ) ;
+        P9 hit ( trolly small_group ) ;
+        P10 kill ( trolly small_group ) ;
+        P11 save ( you large_group ) ;
+        P12 better ( P11 P6 ) ;
+    end ;
+    DefGroups
+        Cause ( P1 P2 P4 ) ( P3 ) ;
+        Cause ( P3 ) ( P5 P6 ) ;
+        Cause ( P7 ) ( P8 ) ;
+        Cause ( P8 ) ( P9 ) ;
+        Cause ( P9 ) ( P10 P11 ) ;
+    end ; 
+done ; { trolly problem 
+        
+Analog Fumes
+    DefPreds
+        better 2 preferred better comparative superior ;
+        travel 2 motion move reavel ;
+        runaway 1 motion out_of_control rapid ;
+        poison 2 motion contact poison kill ;
+        divert 2 motion change delta divert ;
+        push 2 action push motion forward ;
+        do_nothing 1 action -push -motion -forward inaction ;
+        kill 2 cause_die kill -save bad -good ;
+        save 2 save -kill -cause_die good -bad ;
+    end ;
+    DefObjs
+        fumes gas poison kill fumes ;
+        vents ventilation transit metal tubes vents ;
+        switch device electric control ;
+        few_patients people patients few small -many -large ;
+        many_patients people patients many large -few -small ;
+        you person first_person actor you ;
+    end ;
+    DefProps
+        P1 travel ( fumes vents ) ;
+        P2 runaway ( fumes ) ;
+        P3 poison ( fumes many_patients ) ;
+        P4 do_nothing ( you ) ;
+        P5 kill ( fumes many_patients ) ;
+        P6 save ( you few_patients ) ;
+        P7 push ( you switch ) ;
+        P8 divert ( switch fumes ) ;
+        P9 poison ( fumes few_patients ) ;
+        P10 kill ( fumes few_patients ) ;
+        P11 save ( you many_patients ) ;
+        P12 better ( P11 P6 ) ;
+    end ;
+    DefGroups
+        Cause ( P1 P2 P4 ) ( P3 ) ;
+        Cause ( P3 ) ( P5 P6 ) ;
+        Cause ( P7 ) ( P8 ) ;
+        Cause ( P8 ) ( P9 ) ;
+        Cause ( P9 ) ( P10 P11 ) ;
+    end ; 
+done ; { fumes problem
+
+Analog Schema
+done
+
+Sequence
+    Driver=[ 1 ]
+    Recip=[ 0 ]
+    { Order=[ P1 h P2 h P3 h P4 h P5 h P6 h P7 h P8 h P9 h P10 h P11 h ]
+    Order=[ P12 h P11 h P6 h CE-1 ( 6 1 ) CE-2 ( 4 1 ) CE-3 ( 5 1 ) CE-4 ( 4 1 ) CE-5 ( 4 1 ) ]
+    LearningON
+    Driver=[ 0 ]
+    Recip=[ 1 2 ]
+    { Order=[ P1 h P2 h P3 h P4 h P5 h P6 h P7 h P8 h P9 h P10 h P11 h ]
+    Order=[ CE-1 ( 6 1 ) CE-2 ( 4 1 ) CE-3 ( 5 1 ) CE-4 ( 4 1 ) CE-5 ( 4 1 ) ]
+done.
+
+
+        
+         

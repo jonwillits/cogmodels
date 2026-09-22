@@ -1,0 +1,155 @@
+Run of LISA Version 1.00; last modified 8/27/07
+
+Note: karl&renee/physics/1.sym
+Note: First earnest attempt to simulate an aspect of naive physics
+Note: This is a simulation of a kid who understands that an inanimate object needs to have its supporter under it
+Note:   in order to be supported
+Note: Situation is glass (inanimate) with a table under it --> supported (Glass) --> not-fall (Glass)
+Note: Made from karl&renee/toy2c.sym
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:SupportedGlass    Recip : NaivePhysics    Fire control:props    Phase set: P1
+Seq. 1    Driver:SupportedGlass    Recip : NaivePhysics    Fire control:props    Phase set: P2
+Seq. 2    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P1
+Seq. 3    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P5
+Seq. 4    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P1
+Seq. 5    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P3
+Seq. 6    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P2
+Seq. 7    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P1
+Seq. 8    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P2
+Seq. 9    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P3
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From NaivePhysics to SupportedGlass:
+  Groups:
+    From Cause1 to:    "Cause1" = 0.969
+    From Effect1 to:    "Effect1" = 0.982
+    From CE-1 to:    "CE-1" = 0.872
+    From Effect2 to:
+    From CE-2 to:
+    From Cause3 to:    "Cause3" = 0.970
+    From Effect3 to:    "Effect3" = 0.969
+    From CE-3 to:    "CE-3" = 0.877
+    From Effect5 to:
+    From CE-5 to:
+  Props:
+    From P1 to:    "P1" = 0.992
+    From P2 to:    "P2" = 0.988
+    From P3 to:    "P3" = 0.988
+    From P5 to:    P2 = 0.992
+    From P7 to:    P1 = 0.982
+  SPs:
+    From SP1.1 to:    "SP1.1" = 0.993
+    From SP1.2 to:    "SP1.2" = 0.993
+    From SP2.1 to:    "SP2.1" = 0.992
+    From SP3.1 to:    "SP3.1" = 0.990
+    From SP5.1 to:    SP2.1 = 0.993
+    From SP5.2 to:    SP2.2 = 0.993
+    From SP7.1 to:    SP1.1 = 0.992
+  Preds:
+    From SUPPORT1 to:    "SUPPORT1" = 0.970
+    From SUPPORT2 to:    "SUPPORT2" = 0.970
+    From FALL1 to:    "FALL1" = 0.970
+    From NOT1 to:    "NOT1" = 0.969
+    From UNDER1 to:    UNDER1 = 0.970
+    From UNDER2 to:    UNDER2 = 0.970
+    From INANIMATE1 to:    INANIMATE1 = 0.968
+  Objs:
+    From SUPPORTER to:    TABLE = 0.970
+    From SUPPORTED to:    GLASS = 0.970
+
+From SupportedGlass to NaivePhysics:
+  Groups:
+    From "Cause3" to:    Cause3 = 0.970
+    From "CE-3" to:    CE-3 = 0.877
+    From "Effect3" to:    Effect3 = 0.969
+    From "Effect1" to:    Effect1 = 0.982
+    From "CE-1" to:    CE-1 = 0.872
+    From "Cause1" to:    Cause1 = 0.969
+  Props:
+    From P1 to:    P7 = 0.982
+    From P2 to:    P5 = 0.992
+    From "P1" to:    P1 = 0.992
+    From "P3" to:    P3 = 0.988
+    From "P2" to:    P2 = 0.988
+  SPs:
+    From SP1.1 to:    SP7.1 = 0.992
+    From SP2.1 to:    SP5.1 = 0.993
+    From SP2.2 to:    SP5.2 = 0.993
+    From "SP1.1" to:    SP1.1 = 0.993
+    From "SP1.2" to:    SP1.2 = 0.993
+    From "SP3.1" to:    SP3.1 = 0.990
+    From "SP2.1" to:    SP2.1 = 0.992
+  Preds:
+    From UNDER1 to:    UNDER1 = 0.970
+    From UNDER2 to:    UNDER2 = 0.970
+    From INANIMATE1 to:    INANIMATE1 = 0.968
+    From "SUPPORT1" to:    SUPPORT1 = 0.970
+    From "SUPPORT2" to:    SUPPORT2 = 0.970
+    From "NOT1" to:    NOT1 = 0.969
+    From "FALL1" to:    FALL1 = 0.970
+  Objs:
+    From GLASS to:    SUPPORTED = 0.970
+    From TABLE to:    SUPPORTER = 0.970
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+* * * * * Analog SupportedGlass * * * * *
+
+Groups:
+"Cause3":  P2 CAUSE (0.902) 
+"CE-3":  "Cause3" "Effect3" CAUSE-EFFECT (0.869) CS_1.0 (0.869) 
+"Effect3":  "P1" EFFECT (0.902) 
+"Effect1":  "P3" "P2" EFFECT (0.921) 
+"CE-1":  "Effect1" "Cause1" CAUSE-EFFECT (0.871) CS_1.0 (0.871) 
+"Cause1":  "P1" CAUSE (0.902) 
+
+Props:
+"P1":  [ "SUPPORT1" + TABLE ] [ "SUPPORT2" + GLASS ] 
+"P3":  [ "NOT1" + "P2" ] 
+"P2":  [ "FALL1" + GLASS ] 
+
+Preds:
+"SUPPORT1":
+   SUPPORT1(1.000)
+   HOLD1(1.000)
+
+"SUPPORT2":
+   SUPPORT2(1.000)
+   HOLD2(1.000)
+
+"NOT1":
+   NEGATE1(1.000)
+   NOT1(1.000)
+   FALSE1(1.000)
+
+"FALL1":
+   FALL1(1.000)
+   DESCEND1(1.000)
+   GRAVITY1(1.000)
+   BREAK1(1.000)
+
+
+Objs:

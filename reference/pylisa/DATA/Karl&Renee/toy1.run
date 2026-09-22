@@ -1,0 +1,126 @@
+Note: First attempt to illustrate how (child) LISA can run mental models
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:SupportedGlass    Recip : NaivePhysics    Fire control:props    Phase set: P1
+Seq. 1    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P1
+Seq. 2    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P3
+Seq. 3    Driver:NaivePhysics    Recip : SupportedGlass    Fire control:groups    Phase set: P2
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From NaivePhysics to SupportedGlass:
+  Groups:
+    From G1 to:
+    From G2 to:    "G2" = 0.969
+    From G3 to:    "G3" = 0.879
+    From G4 to:
+    From G5 to:
+    From G6 to:
+  Props:
+    From P1 to:    P1 = 0.990
+    From P2 to:    "P2" = 0.982
+    From P3 to:    "P3" = 0.987
+    From P4 to:
+    From P5 to:
+    From P6 to:
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.993
+    From SP1.2 to:    SP1.2 = 0.993
+    From SP2.1 to:    "SP2.1" = 0.987
+    From SP3.1 to:    "SP3.1" = 0.990
+    From SP4.1 to:
+    From SP4.2 to:
+    From SP5.1 to:
+    From SP6.1 to:
+    From SP6.2 to:
+  Preds:
+    From SUPPORT1 to:    SUPPORT1 = 0.968
+    From SUPPORT2 to:    SUPPORT2 = 0.968
+    From FALL1 to:    "FALL1" = 0.968
+    From UNSUPPORTED1 to:
+    From NOT1 to:    "NOT1" = 0.969
+    From CAUSE1 to:
+    From CAUSE2 to:
+  Objs:
+    From SUPPORTER to:    TABLE = 0.968
+    From SUPPORTED to:    GLASS = 0.968
+
+From SupportedGlass to NaivePhysics:
+  Groups:
+    From "G3" to:    G3 = 0.879
+    From "G2" to:    G2 = 0.969
+  Props:
+    From P1 to:    P1 = 0.990
+    From "P3" to:    P3 = 0.987
+    From "P2" to:    P2 = 0.982
+  SPs:
+    From SP1.1 to:    SP1.1 = 0.993
+    From SP1.2 to:    SP1.2 = 0.993
+    From "SP3.1" to:    SP3.1 = 0.990
+    From "SP2.1" to:    SP2.1 = 0.987
+  Preds:
+    From SUPPORT1 to:    SUPPORT1 = 0.968
+    From SUPPORT2 to:    SUPPORT2 = 0.968
+    From "NOT1" to:    NOT1 = 0.969
+    From "FALL1" to:    FALL1 = 0.968
+  Objs:
+    From GLASS to:    SUPPORTED = 0.968
+    From TABLE to:    SUPPORTER = 0.968
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+* * * * * Analog NaivePhysics * * * * *
+
+Groups:
+
+Props:
+
+Preds:
+
+Objs:
+
+* * * * * Analog SupportedGlass * * * * *
+
+Groups:
+"G3":  "G2" EFFECT (1.000) CAUSEEFFECT (1.000) 
+"G2":  "P3" "P2" EFFECT (1.000) CAUSEEFFECT (1.000) 
+
+Props:
+"P3":  [ "NOT1" + "P2" ] 
+"P2":  [ "FALL1" + GLASS ] 
+
+Preds:
+"NOT1":
+   NEGATE1(1.000)
+   NOT1(1.000)
+   FALSE1(1.000)
+
+"FALL1":
+   FALL1(1.000)
+   DESCEND1(1.000)
+   GRAVITY1(1.000)
+   BREAK1(1.000)
+
+
+Objs:

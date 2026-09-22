@@ -1,0 +1,145 @@
+Note: st.john/2.sym  second (next easiest) attempt to do st john w/ pyLISA
+
+Note: this file does ssl but no schema induction, and .SYM tells LISA when 
+
+Note: to license ssl
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Unlimited WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = True
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P1
+Seq. 1    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P2
+Seq. 2    Driver:Target-Joan    Recip : Source-Bill    Fire control:props    Phase set: P3
+Seq. 3    Driver:Source-Bill    Recip : Target-Joan    Fire control:props    Phase set: P4
+Seq. 4    Driver:Source-Bill    Recip : Target-Joan    Fire control:props    Phase set: P5
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Target-Joan to Source-Bill:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+    From P2 to:    P2 = 0.982
+    From P3 to:    P3 = 0.982
+    From "P5" to:
+    From "P4" to:    P4 = 0.879
+  Preds:
+    From HAS1 to:    HAS1 = 0.968
+    From HAS2 to:    HAS2 = 0.968
+    From GOTO1 to:    GOTO1 = 0.968
+    From GOTO2 to:    GOTO2 = 0.968
+    From WANT1 to:    WANT1 = 0.968
+    From WANT2 to:    WANT2 = 0.968
+    From "DRIVETO1" to:    DRIVETO1 = 0.969
+    From "DRIVETO2" to:    DRIVETO2 = 0.879
+    From "DRIVETO3" to:    DRIVETO3 = 0.879
+    From "CAUSE1" to:    CAUSE1 = 0.969
+    From "CAUSE2" to:    CAUSE2 = 0.879
+  Objs:
+    From JOAN to:    BILL = 0.970
+    From CIVIC to:    JEEP = 0.968
+    From LAX to:    BEACH = 0.968
+
+From Source-Bill to Target-Joan:
+  Groups:
+  Props:
+    From P1 to:    P1 = 0.990
+    From P2 to:    P2 = 0.982
+    From P3 to:    P3 = 0.982
+    From P4 to:    "P4" = 0.879
+    From P5 to:
+  Preds:
+    From HAS1 to:    HAS1 = 0.968
+    From HAS2 to:    HAS2 = 0.968
+    From GOTO1 to:    GOTO1 = 0.968
+    From GOTO2 to:    GOTO2 = 0.968
+    From WANT1 to:    WANT1 = 0.968
+    From WANT2 to:    WANT2 = 0.968
+    From DRIVETO1 to:    "DRIVETO1" = 0.969
+    From DRIVETO2 to:    "DRIVETO2" = 0.879
+    From DRIVETO3 to:    "DRIVETO3" = 0.879
+    From CAUSE1 to:    "CAUSE1" = 0.969
+    From CAUSE2 to:    "CAUSE2" = 0.879
+  Objs:
+    From BILL to:    JOAN = 0.970
+    From JEEP to:    CIVIC = 0.968
+    From BEACH to:    LAX = 0.968
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+Analog Target-Joan:
+
+Props:
+
+Props:
+"P5":  
+"P4":  
+
+Preds:
+"DRIVETO1":
+   PTRANS1(1.000)
+   GOTO1(1.000)
+   DRIVE1(1.000)
+   VEHICLE1(1.000)
+   DRIVE21(1.000)
+   DRIVE31(1.000)
+
+"DRIVETO2":
+   PTRANS2(1.000)
+   GOTO2(1.000)
+   DRIVE2(1.000)
+   VEHICLE2(1.000)
+   DRIVE22(1.000)
+   DRIVE32(1.000)
+
+"DRIVETO3":
+   PTRANS3(1.000)
+   GOTO3(1.000)
+   DRIVE3(1.000)
+   VEHICLE3(1.000)
+   DRIVE23(1.000)
+   DRIVE33(1.000)
+
+"CAUSE1":
+   CAUSE1(1.000)
+   CAUSE21(1.000)
+   CAUSE31(1.000)
+   CAUSE41(1.000)
+
+"CAUSE2":
+     CAUSE2(0.763)
+     CAUSE22(0.763)
+     CAUSE32(0.763)
+     CAUSE42(0.763)
+
+
+Objs:
+
+Analog Source-Bill:
+
+Props:
+
+Props:
+
+Preds:
+
+Objs:

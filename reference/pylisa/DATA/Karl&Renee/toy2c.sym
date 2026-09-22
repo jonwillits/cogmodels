@@ -1,0 +1,60 @@
+Note: Third attempt to illustrate how (child) LISA can run mental models
+Note: This time, LISA must figure out whether the table supports the glass
+Note: 2b made from 2 by eliminating explicit cause statements
+Note: 2c made from 2b by replacing all the Group definition statements with Cause () () statements
+Note:   this is a test of the Cause command in DefGroups
+
+Analog NaivePhysics
+  DefPreds
+    support 2 support hold -fall ;
+    fall 1 fall descend gravity break ;
+    unsupported 1 -support -hold fall ;
+    not 1 negate not false ;
+    under 2 below spatial under ;
+    beside [ nextTo spatial1 spatial2 beside ] [ nextTo spatial1 spatial2 beside ] ;
+  end
+  DefObjs
+    supporter solid strong horizontal supporter ;
+    supported light supported ;
+  end
+  DefProps
+    P1 support ( supporter supported ) ;
+    P2 fall ( supported ) ;
+    P3 not ( P2 ) ;
+    P4 unsupported ( supported ) ;
+    P5 under ( supporter supported ) ;
+    P6 beside (supporter supported ) ;
+  end
+  DefGroups
+    Cause ( P1 ) ( P2 P3 ) 100 ; { will automatically be named "CE-1"
+    Cause ( P4 ) ( P2 ) 100 ;  { CE-2
+    Cause ( P5 ) ( P1 ) 100 ;  { CE-3
+    Cause ( P6 ) ( P4 ) 100 ;  { CE-4
+  end
+done { naiive physics analog
+
+Analog SupportedGlass
+  DefPreds
+    under 2 below spatial under ;
+  end
+  DefObjs
+    glass glass container drink fragile ;
+    table large horizontal flat furniture table ;
+  end
+  DefProps
+    P1 under ( Table Glass ) ;
+  end
+done { glass example
+
+Sequence { lots of hand-holding here
+  Driver=[ 1 ]
+  Recip=[ 0 ]
+  Order=[ P1 h ]
+  { turn control over to the schema
+  SSL_OK
+  Driver=[ 0 ]
+  Recip=[ 1 ]
+  Order=[ CE-3 ( 3 1 ) ] { make LISA infer supported
+  Order=[ CE-1 ( 5 1 ) ] { infer ~fall and causal relation
+done.
+    

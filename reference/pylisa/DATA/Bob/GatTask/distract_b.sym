@@ -1,0 +1,51 @@
+Note: GAT FTLD Task
+Note: Distractor Condition
+Note: Assume that Semantic Distractors share some predicate semantic units with
+Note:  Assume perceptual distractors/Library/Frameworks/Python.framework/Versions/2.4/PyLISA2.4/VersBeta3/DATA/Bob/GatTask/distract2.bat share some object semantic unit overlap
+
+Parameters
+  SemanticNoise 0.1
+  SemanticDeath 0.75
+  HebbLearningRate 0.9
+Done
+
+Analog Problem
+  DefPreds
+    Right 2 relation right r1 r2 r3 r4 r5 r6 r7 r8 r10 r12 ;
+  end { defpreds
+  DefObjs
+    A object a1 a2 ;
+    B object b1 b2 ;
+  end { defobjs
+  DefProps
+    P1 Right ( A B ) ;
+  end { defprops
+Done { analog 0
+
+Analog LTM
+  DefPreds
+    Right 2 relation right r1 r2 r3 r4 r5 r6 r7 r8 r9 r11 ;
+    WrongS 2 relation wrong r1 r2 r3 r4 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 ;
+    WrongP 2 relation wrong p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 ;
+    WrongU 2 relation wrong u1 u2 u3 u4 u5 u6 u7 u8 u9 u10 u11 u12 ;
+  end { defpreds
+  DefObjs
+    C object c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 c12 ;
+    D object d1 d2 d3 d4 d5 d6 d7 d8 d9 d10 d11 d12 ;
+    S object s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 ;
+    P object c1 c2 c3 c4 p1 p2 p3 p4 p5 p6 p7 p8 ;
+    U object u1 u2 ;
+  end { defobjs
+  DefProps
+    P1 Right ( C D ) ;
+    P2 WrongS ( C S ) ;
+    P3 WrongP ( C P ) ;
+    { P5 WrongU ( C U ) ;
+  end { defpreds
+Done { analog 1
+
+Sequence
+  Driver=[ 0 ] { set analog 0 to driver
+  Recip=[ 1 ] { set analog 1 to recip
+  Order=[ P1 h P1 h ]
+Done.

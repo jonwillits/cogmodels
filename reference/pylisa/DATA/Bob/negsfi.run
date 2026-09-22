@@ -1,0 +1,108 @@
+Note: Negative SFI, John's version to test the hypothesis that
+Note:   Bob'e problem stems ffrom making the sym file in Word
+Note: More notes to be added later if this works
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.3300
+    Semantic Death = 0.7500
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 0.9000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Problem    Recip : LTM    Fire control:props    Phase set: P1
+Seq. 1    Driver:Problem    Recip : LTM    Fire control:props    Phase set: P1
+Seq. 2    Driver:Problem    Recip : LTM    Fire control:props    Phase set: P1
+Seq. 3    Driver:Problem    Recip : LTM    Fire control:props    Phase set: P1
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Problem to LTM:
+  Groups:
+  Props:
+    From P1 to:    P3 = 0.990
+  SPs:
+    From SP1.1 to:    SP5.1 = 0.891    SP3.2 = 0.989
+    From SP1.2 to:    SP3.1 = 0.990
+  Preds:
+    From RIGHT1 to:    WRONGC1 = 0.872    WRONGA2 = 0.968
+    From RIGHT2 to:    WRONGA1 = 0.969
+  Objs:
+    From A to:    C = 0.889
+    From B to:    D = 0.007    DPRIME = 0.098
+
+From LTM to Problem:
+  Groups:
+  Props:
+    From P1 to:
+    From P2 to:
+    From P3 to:    P1 = 0.990
+    From P4 to:
+    From P5 to:
+    From P6 to:
+  SPs:
+    From SP1.1 to:
+    From SP1.2 to:
+    From SP2.1 to:
+    From SP2.2 to:
+    From SP3.1 to:    SP1.2 = 0.990
+    From SP3.2 to:    SP1.1 = 0.989
+    From SP4.1 to:
+    From SP4.2 to:
+    From SP5.1 to:    SP1.1 = 0.891
+    From SP5.2 to:
+    From SP6.1 to:
+    From SP6.2 to:
+  Preds:
+    From RIGHTA1 to:
+    From RIGHTA2 to:
+    From RIGHTB1 to:
+    From RIGHTB2 to:
+    From WRONGA1 to:    RIGHT2 = 0.969
+    From WRONGA2 to:    RIGHT1 = 0.968
+    From WRONGB1 to:
+    From WRONGB2 to:
+    From WRONGC1 to:    RIGHT1 = 0.872
+    From WRONGC2 to:
+    From WRONGD1 to:
+    From WRONGD2 to:
+  Objs:
+    From C to:    A = 0.889
+    From D to:    B = 0.007
+    From DPRIME to:    B = 0.098
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+* * * * * Analog Problem * * * * *
+
+Groups:
+
+Props:
+
+Preds:
+
+Objs:
+
+* * * * * Analog LTM * * * * *
+
+Groups:
+
+Props:
+
+Preds:
+
+Objs:

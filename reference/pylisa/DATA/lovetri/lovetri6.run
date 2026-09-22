@@ -1,0 +1,147 @@
+Note: Made from lovetri
+
+Note: This version introduces self-supervised learning!
+
+* * * * * * * * * * * * * * * * * * * * *
+Parameters values:
+    Neurally-plausible WM
+    Semantic Noise = 0.0000
+    Semantic Death = 0.0000
+    Attention = 1.0000
+    Within-group support = 1.0000
+    Driver Inhibition = 1.0000
+    Recip Inhibition = 1.0000
+    Hebb Learning Rate = 1.0000
+    Bail Upon Settling = False
+    Using Vers142 Mapping Algorithm
+* * * * * * * * * * * * * * * * * * * * *
+
+Sequence:
+Seq. 0    Driver:Target-Abe&Beth    Recip : Source-Amy&Bill    Fire control:props    Phase set: P1 P2
+Seq. 1    Driver:Target-Abe&Beth    Recip : Source-Amy&Bill    Fire control:props    Phase set: P1
+Seq. 2    Driver:Target-Abe&Beth    Recip : Source-Amy&Bill    Fire control:props    Phase set: P2
+Seq. 3    Driver:Target-Abe&Beth    Recip : Source-Amy&Bill    Fire control:props    Phase set: P1
+Seq. 4    Driver:Target-Abe&Beth    Recip : Source-Amy&Bill    Fire control:props    Phase set: P2
+Seq. 5    Driver:Source-Amy&Bill    Recip : Target-Abe&Beth    Fire control:props    Phase set: P1
+Seq. 6    Driver:Source-Amy&Bill    Recip : Target-Abe&Beth    Fire control:props    Phase set: P2
+Seq. 7    Driver:Source-Amy&Bill    Recip : Target-Abe&Beth    Fire control:props    Phase set: P3
+Seq. 8    Driver:Source-Amy&Bill    Recip : Target-Abe&Beth    Fire control:props    Phase set: P1
+Seq. 9    Driver:Source-Amy&Bill    Recip : Target-Abe&Beth    Fire control:props    Phase set: P2
+Seq. 10    Driver:Source-Amy&Bill    Recip : Target-Abe&Beth    Fire control:props    Phase set: P3
+
+
+* * * * * * * * * * * * * * * *
+* * * Mapping Connections * * *
+* * * * * * * * * * * * * * * *
+
+From Source-Amy&Bill to Target-Abe&Beth:
+  Groups:
+    From G1 (L0) to:    "G1 (L0)" = 0.970    "G1 (L0)" = 0.970
+    From G2 (L0) to:    "G2 (L0)" = 0.970
+    From G3 (L1) to:    "G3 (L1)" = 0.879
+  Props:
+    From P1 to:    P1 = 0.992
+    From P2 to:    P2 = 0.992
+    From P3 to:    P2 = 0.992
+  Preds:
+    From LOVES1 to:    LOVES1 = 0.970
+    From LOVES2 to:    LOVES2 = 0.970
+    From JEALOUS1 to:    LOVES1 = 0.970
+    From JEALOUS2 to:    LOVES2 = 0.970
+  Objs:
+    From AMY to:    ABE = 0.960    BETH = 0.960
+    From BILL to:    BETH = 0.970
+    From CAT to:    CHAD = 0.970
+
+From Target-Abe&Beth to Source-Amy&Bill:
+  Groups:
+    From G1 (L0) to:
+    From "G3 (L1)" to:
+    From "G1 (L0)" to:
+    From "G3 (L1)" to:
+    From "G2 (L0)" to:
+    From "G1 (L0)" to:    G1 (L0) = 0.970
+    From "G3 (L1)" to:
+    From "G1 (L0)" to:    G1 (L0) = 0.970
+    From "G3 (L1)" to:
+    From "G2 (L0)" to:    G2 (L0) = 0.970
+    From "G3 (L1)" to:    G3 (L1) = 0.879
+  Props:
+    From P1 to:    P1 = 0.992
+    From P2 to:    P2 = 0.992    P3 = 0.992
+    From "P3" to:
+  Preds:
+    From LOVES1 to:    LOVES1 = 0.970    JEALOUS1 = 0.970
+    From LOVES2 to:    LOVES2 = 0.970    JEALOUS2 = 0.970
+    From "JEALOUS1" to:
+    From "JEALOUS2" to:
+  Objs:
+    From ABE to:    AMY = 0.960
+    From BETH to:    AMY = 0.960    BILL = 0.970
+    From CHAD to:    CAT = 0.970
+    From "AMY" to:
+
+
+
+* * * * * * * * * * * * * * * *
+* * * * Inferred Units  * * * *
+* * * * * * * * * * * * * * * *
+
+Analog Source-Amy&Bill:
+
+Props:
+
+Props:
+
+Preds:
+
+Objs:
+
+Analog Target-Abe&Beth:
+
+Props:
+"G3 (L1)":  G1 (L0) "G1 (L0)" "G2 (L0)" "G1 (L0)" "G1 (L0)" "G2 (L0)" EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+"G1 (L0)":  P2 "P3" P1 EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+"G3 (L1)":  "G1 (L0)" "G2 (L0)" "G1 (L0)" "G1 (L0)" "G2 (L0)" EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+"G2 (L0)":  P2 "P3" P1 EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+"G1 (L0)":  P1 P2 EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+"G3 (L1)":  "G1 (L0)" "G1 (L0)" "G2 (L0)" "G1 (L0)" "G2 (L0)" EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+"G1 (L0)":  P2 EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+"G3 (L1)":  "G1 (L0)" "G1 (L0)" "G2 (L0)" "G1 (L0)" "G2 (L0)" EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+"G2 (L0)":  P2 EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+"G3 (L1)":  "G2 (L0)" EMOTION2 (1.000) NEGATIVE2 (1.000) STRONG2 (1.000) JEALOUS2 (1.000) 
+
+Props:
+"P3":  [ "JEALOUS2" + CHAD ] 
+
+Preds:
+"JEALOUS1":
+EMOTION1(1.000)
+     POSITIVE1(0.501)
+STRONG1(1.000)
+     LOVES1(0.501)
+   NEGATIVE1(0.723)
+   JEALOUS1(0.723)
+"JEALOUS2":
+EMOTION2(1.000)
+        POSITIVE2(0.240)
+STRONG2(1.000)
+        LOVES2(0.240)
+NEGATIVE2(0.998)
+JEALOUS2(0.998)
+
+Objs:
+"JEALOUS1":
+EMOTION1(1.000)
+     POSITIVE1(0.501)
+STRONG1(1.000)
+     LOVES1(0.501)
+   NEGATIVE1(0.723)
+   JEALOUS1(0.723)
+"JEALOUS2":
+EMOTION2(1.000)
+        POSITIVE2(0.240)
+STRONG2(1.000)
+        LOVES2(0.240)
+NEGATIVE2(0.998)
+JEALOUS2(0.998)
