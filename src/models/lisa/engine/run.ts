@@ -351,6 +351,61 @@ export class LisaRun {
     return best
   }
 
+  /**
+   * Weight (or hypothesis) matrix between two analogs for one unit type:
+   * rows are `from`'s units, columns `to`'s units, in analog order.
+   */
+  matrix(from: number, to: number, type: UnitType, field: 'w' | 'h' = 'w'): { rows: string[]; cols: string[]; values: Float64Array } {
+    const { net } = this
+    const conns = this.sim.conns
+    const rowIds = [net.analogs[from].p, net.analogs[from].sp, net.analogs[from].pred, net.analogs[from].obj][type]
+    const colIds = [net.analogs[to].p, net.analogs[to].sp, net.analogs[to].pred, net.analogs[to].obj][type]
+    const values = new Float64Array(rowIds.length * colIds.length)
+    const colIndex = new Map(colIds.map((id, i) => [id, i]))
+    const src = field === 'w' ? conns.w : conns.h
+    rowIds.forEach((r, i) => {
+      for (const c of conns.byUnit[r]) {
+        const j = colIndex.get(conns.other(c, r))
+        if (j !== undefined) values[i * colIds.length + j] = src[c]
+      }
+    })
+    return { rows: rowIds.map((id) => net.units[id].name), cols: colIds.map((id) => net.units[id].name), values }
+  }
+
+  /** The last iteration's input breakdown for one unit (the inspector's stacked bar). */
+  unitInputs(id: number): { bu: number; td: number; lat: number; hebb: number; net: number } {
+    const s = this.sim
+    const hebb = s.hebb[id] * this.cfg.hebbBias
+    return { bu: s.bu[id], td: s.td[id], lat: s.lat[id], hebb, net: s.bu[id] + s.td[id] + s.lat[id] + hebb }
+  }
+
+  /** Mapping connections of one unit: the other unit, its analog, weight and current hypothesis. */
+  connectionsOf(id: number): { other: number; analog: number; weight: number; hypothesis: number }[] {
+    const conns = this.sim.conns
+    return conns.byUnit[id].map((c) => {
+      const o = conns.other(c, id)
+      return { other: o, analog: this.net.units[o].analog, weight: conns.w[c], hypothesis: conns.h[c] }
+    })
+  }
+
+  /** The SP that is firing now (most active and above 0.5), or -1 during a transition. */
+  get firingSPOn(): number {
+    const f = this.firingSP
+    return f >= 0 && this.sim.act[f] > 0.5 ? f : -1
+  }
+
+  /** Step until a different SP is firing (or the phase set ends). */
+  stepToNextSP(maxSteps = 5000): void {
+    const phase = this.sim.phase?.index ?? this.seqIndex + 1
+    const start = this.firingSPOn
+    for (let i = 0; i < maxSteps; i++) {
+      if (!this.step()) return
+      if (this.sim.phase === null || this.sim.phase.index !== phase) return
+      const f = this.firingSPOn
+      if (f >= 0 && f !== start) return
+    }
+  }
+
   /** A printable mapping table in the layout of Hummel's .run files. */
   mappingReport(): string {
     const lines: string[] = []

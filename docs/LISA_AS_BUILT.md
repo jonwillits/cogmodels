@@ -54,3 +54,27 @@ The spec is `lisa/LISA_SPEC.md` in the Box research folder. The claims audit bes
 ### Reference harness
 
 - `reference/pylisa/` is a `fissix` conversion of Hummel's six model modules to Python 3, with a stub for his pygame graphics, a headless driver (`harness.py`) and a summarizer (`analyze.py`). Two lines of his code are patched, both marked `HARNESS`: the settling routine records its round count, and a `str.pop` call that would crash on a `Note:` line inside an analog is removed. `reference/expected/*.json` are its outputs; `reference.test.ts` compares distributions. See `reference/README.md`.
+
+## Phase 2: demo UI for mapping (2026-09-23)
+
+### Decisions
+
+- **The session object.** The demo keeps the run, the trace ring buffers and the mapping history in one object rebuilt by `useMemo` whenever the scenario, preset, overrides or seed change (or on reset). It is mutated in place by stepping and the views re-render on a tick counter. This keeps React out of the engine and avoids reading refs during render.
+- **Everything is traced.** The recorder tracks every structure unit and every semantic unit (about 50 tracks on the love triangle, under 300 on the largest built-in) in 2,000-sample ring buffers, and the Synchrony tab chooses what to show. Recording costs about a third of the engine's own time per step (3.5 versus 4.7 ms per love-triangle run), so no per-track selection was needed.
+- **Firings, not `times_fired`.** The run record's `firings` (rising edges through 0.5) is what the Batch tab's firing spread and the capacity claim use.
+- **Step to the next SP** means: step until an SP other than the one firing now is above 0.5, or the phase set ends. During a transition (no SP above 0.5) it runs until any SP fires.
+- **Mapping history** is one matrix set per completed phase set, captured at the moment the phase set ends (so a `run to end` still records every intermediate state).
+- **Batch seeds** are always 1…N, independent of the demo's seed, so batch results are comparable across sessions and to `reference/expected`.
+- **Compare** varies one key (or one claim's whole set of keys) on top of the configuration currently loaded, including any Advanced overrides, and always runs the claim's own scenario.
+- **Network layout.** Driver on top, both semantic pools in a row in the middle (predicate left, object right), recipients and dormant analogs mirrored below so that predicates and objects sit nearest the semantics. Before the first phase set begins, the layout uses the phase set that is about to run. Mapping lines cross the semantic band; accepted for now.
+- **Info text** lives in `demos/lisa/info.ts`; a test asserts that every ⓘ id used in the demo and every configuration key has an entry.
+
+### Findings from the Claims tab (Hummel2007, love triangle, 20 seeds; `claims.probe.ts`)
+
+- **The transition gate is load-bearing.** With `transitionGating` off (top-down input allowed as soon as every SP has fired once, as the paper states), the love triangle fails 0/20; with it on, 20/20. Audit item 5 called it "probably makes mapping cleaner"; it is closer to necessary, at least under Vers142. Worth a sentence in the audit.
+- **Ignoring argument semantics breaks the code's solution.** `ignoreArgSemanticsWhenBatched` on (the mechanism p. 232 states) gives 0/20 under Vers142; off gives 20/20. So the paper's stated mechanism and the code's working solution point in opposite directions on this scenario. Under the published mapping rule it fails either way (0/20).
+- **Grouping the SPs by proposition does not matter** on this scenario (20/20 either way), so the "theory-to-code error" Hummel noted in July 2007 has no effect here under Vers142.
+- **Refreshing the driver's own units matters.** `refreshScope = nonDriver` (the paper) drops the triangle to 8/20; sparing parent-mode P units (`parentPropsSkipRefresh`) makes no difference (20/20 either way).
+- **The recipient-competition switches make no difference here** (within-class rule, Weber versus cosine, out-of-proposition rule, driver lateral rule: all 20/20 both ways). The audit's test for item 7 needs a scenario with genuine semantic ambiguity; none of the built-ins has one.
+- **SP noise of the 1997 size** (±0.1) reduces clean time-sharing slightly: 56/60 phase sets against 60/60 without.
+- **Other built-ins, 20 seeds, code preset:** lovetri7 mapping stage 20/20 (Abe→Amy, Beth→Bill, Chad→Cat); stjohn4 20/20 on objects and P1, P2, with P3→P5 in all 20 (see the phase 1 finding); hierarchy1 maps P1→P2 and P2→P1 in all 20, X→C and Z→A: the predicates decide and the embedding levels cross.

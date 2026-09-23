@@ -2,35 +2,34 @@
 
 The build tracker for cogmodels. The spec is `lisa/LISA_SPEC.md` in the Box research folder (`research/projects/cogmodels/`); this file records what is done and what is next. One paragraph per line.
 
-> **Where we are (2026-09-22, evening):** **Phase 1 is done.** The LISA engine core maps: configuration object and five presets with provenance, `.sym` parser, network, driver and recipient dynamics, both mapping algorithms, random firing, unlimited WM. It reproduces Hummel's own code: 20/20 on the structural love triangle under `Hummel2007` with final weights identical to his to three decimals, and it fails the triangle under his "H&H 03" suite exactly as his code does (0/10). The reference harness (a Python 3 conversion of his code) is in `reference/`. Timing: about 5 µs per iteration, 14 ms per love-triangle run, well inside the §9.5 budgets. Every decision and finding is in [`LISA_AS_BUILT.md`](LISA_AS_BUILT.md). Next: phase 2, the demo UI for mapping, and the walk-through for Jon.
+> **Where we are (2026-09-23):** **Phase 2 is built and awaiting Jon's walk-through** (`lisa/LISA_WALKTHROUGH.md` in Box). The LISA demo at `#/models/lisa` has the control bar (scenario, preset with the Advanced panel showing every setting's provenance, seed, stepping by 1, 10, SP, phase set or to the end, play with a speed control, and a status readout), five tabs (Network, Synchrony, Mapping, Batch, Claims), an inspector for any unit, and ⓘ info panels on every control, tab, unit type and setting. Batch and Claims run in a Web Worker. The Claims tab's Compare already produced two findings: the undocumented transition gate is load-bearing (without it the love triangle fails 20/20), and ignoring argument semantics as the 2003 paper says breaks the triangle under Vers142. Details in [`LISA_AS_BUILT.md`](LISA_AS_BUILT.md). Next: Jon walks the demo; then phase 3, self-supervised learning.
 >
-> **Where we were (2026-09-22, afternoon):** Phase 0 done; the site is live at <https://jonwillits.github.io/cogmodels/>.
+> **Where we were (2026-09-22):** Phase 1 done: the engine core reproduces Hummel's code on the love triangle (19/20 his, 20/20 ours, identical weights). Phase 0 done: site live at <https://jonwillits.github.io/cogmodels/>.
 
 ## Phase 0 — Site shell
 
-- [x] Repo, stack, hash routing, registry, landing page with topic cards, topic page, shell, shared components, seeded random stream with its `Math.random()` guard, placeholder LISA page. Deployed and verified live (2026-09-22).
+- [x] Repo, stack, hash routing, registry, landing page with topic cards, topic page, shell, shared components, seeded random stream with its `Math.random()` guard. Deployed and verified live (2026-09-22).
 
 ## Phase 1 — Engine core (mapping)
 
-- [x] `engine/config.ts`: `LisaConfig` (flat numbers and switches) and the `Preset` type with provenance marks. `engine/presets.ts`: `Hummel2007` in full, the other four as annotated overrides. Test: every preset defines every key; stated settings cite a source.
-- [x] `input/symParser.ts`: Hummel's `.sym` grammar with line-numbered errors; groups, similarity and bail-upon-settling recognized and reported as unsupported. Tests: all four built-ins parse; hand-coded predicates, child propositions, negation, random firing, `Parameters`; malformed input gives line numbers.
-- [x] `engine/network.ts`: units, analogs, semantic pools, one `addUnit` path for later structural changes.
-- [x] `engine/dynamics.ts`: one iteration, ported from `runLISA.update_network`, with the §8.7 switches (plus four added; see as-built).
-- [x] `engine/mapping.ts`: connections, hypotheses, `hh2003` and `vers142` updates (consistency from topology), mapping quality.
-- [x] `engine/firing.ts`: readiness, support, Luce selection with attention on the fly.
-- [x] `engine/run.ts`: phase sets, grouped batching, unlimited WM, semantic death, per-phase-set records (top-down iteration, firings, settle rounds, mapping quality), mapping tables.
-- [x] Tests (24 + 3 reference): inhibitor phases, time-sharing for 2–4 SPs (5–8 recorded), Table 2 arithmetic under both normalizations, mapping-rule units, determinism, love triangle 20/20, and three distribution comparisons against Hummel's code.
-- [x] `timing.probe.ts` and `compare.probe.ts` (`PROBE=1`).
-- [x] Reference harness: `reference/pylisa` (fissix conversion, two marked patches, graphics stub, `harness.py`, `analyze.py`) and `reference/expected/*.json`.
-- [x] Four built-in scenarios with attribution headers.
-- [ ] Deferred to phase 5: the 1997-only rules (`HH1997` does not run yet). Deferred to phase 3: self-supervised learning (scenarios with SSL run their mapping and warn).
+- [x] Configuration object and five presets with provenance; `.sym` parser; network; dynamics with the §8.7 switches; both mapping algorithms; random firing; unlimited WM; run records; four built-in scenarios; reference harness and distribution tests against Hummel's code. (2026-09-22)
+- [ ] Deferred to phase 5: the 1997-only rules (`HH1997` does not run yet). Deferred to phase 3: self-supervised learning.
 
 ## Phase 2 — Demo UI (mapping)
 
-- [ ] Control bar: scenario picker, preset picker with the Advanced panel (values, provenance marks, notes), seed, step buttons (1, 10, SP, phase set, run), play/pause, speed, status readout.
-- [ ] Network tab (SVG, Hummel's colours), Synchrony tab (traces), Mapping tab (heatmaps with history), Batch tab (worker), inspector, ⓘ info panels (`demos/lisa/info.ts`).
-- [ ] Claims tab for audit items 1, 2, 5, 6, 7 with one-switch Compare runs (`models/lisa/claims.ts`).
-- [ ] Performance budgets; walk-through document `lisa/LISA_WALKTHROUGH.md` in Box.
+- [x] Controller (`demos/lisa/useLisaController.ts`): one session object (run, trace ring buffers, mapping history) rebuilt on any input change; stepping helpers; animation loop with a 12 ms per-frame clamp.
+- [x] Control bar: scenario and preset pickers, Advanced panel (grouped settings, S/I/B/O provenance marks with citations on hover, modified-from-preset highlight and reset), seed with a random button, `StepControls` (1, 10, SP, phase set, end, play/pause, iterations per frame), status readout (phase set, iteration, driver → recipients, firing SP, top-down, GI).
+- [x] Network tab: driver on top, semantic pools in the middle, recipients mirrored below; fill = activation, outline = retrieved, ▲▼ = mode, halo = firing SP; structure, semantic and mapping lines; hypothesis toggle; click a unit for the inspector.
+- [x] Synchrony tab: `TracePlot` canvas over the last 2,000 iterations with phase-set, top-down and mapping markers; driver phase-set units, recipients, and semantics (none, active, all).
+- [x] Mapping tab: one `Matrix` heatmap per unit type with best-in-row highlight and hover readout, history scrubber over phase sets, hypotheses toggle, mapping quality and licensing.
+- [x] Batch tab: N seeds in the worker with progress, outcome rate beside the reference, top-down timing, firing spread, settle rounds, best-mapping distributions per unit.
+- [x] Claims tab: six entries (audit items 1, 2, 5, 6, 7 and the Table 2 normalization finding) from `models/lisa/claims.ts`; per-switch and all-switches Compare in the worker.
+- [x] Inspector: activation, retrieved, mode, priority terms, inhibitor and sensitivity, net-input stacked bar, semantic weights, mapping connections with hypotheses.
+- [x] ⓘ info panels (`demos/lisa/info.ts`), with links into the Claims tab; a test checks every ⓘ id has an entry and every setting has one.
+- [x] Tests: batch determinism and outcomes, claims data validity, info coverage (34 tests total). Probes: `claims.probe.ts`, `outcome.probe.ts`, `compare.probe.ts`, `timing.probe.ts`.
+- [x] Performance: the engine is 3.5 ms per love-triangle run bare and 4.7 ms with trace recording; reading all tracks for a frame is 0.3 ms; a 20-seed batch is about 80 ms in the worker.
+- [ ] Jon's walk-through (`lisa/LISA_WALKTHROUGH.md` in Box), then fixes from it.
+- [ ] Not in this phase: the Edit tab (phase 4), the Inference tab (phase 3).
 
 ## Phases 3–5
 

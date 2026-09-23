@@ -1,0 +1,72 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 14px;
+}
+.btn:hover {
+  border-color: var(--accent);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.play {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #06101f;
+}
+.play:hover {
+  background: var(--accent-strong);
+}
+
+.step {
+  height: 32px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+.step:hover {
+  border-color: var(--accent);
+}
+.step:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.speed {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+.speed input {
+  accent-color: var(--accent);
+  width: 90px;
+}
+.speedVal {
+  font-family: var(--font-mono);
+  color: var(--text);
+  min-width: 40px;
+  text-align: right;
+}
